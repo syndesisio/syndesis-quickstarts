@@ -6,7 +6,9 @@ In this scenario we start with a OpenAPI/Swagger file `task-api.json` containing
 
 ## Screencast of this Quickstart
 
-Link to a screencast of this quickstart on our youtube channel: https://youtu.be/RAa1qy3WnWQ
+Link to a screencast of this quickstart on our youtube channel:
+
+[![API Provider Quickstart](https://i9.ytimg.com/vi/RAa1qy3WnWQ/mq2.jpg?sqp=CMDkgt4F&rs=AOn4CLB3BmHhCq-SZPwYDh6CnU9FIEOXjg)](https://youtu.be/RAa1qy3WnWQ)
 
 
 ## Getting Started
@@ -53,7 +55,7 @@ curl -k -X DELETE $externalURL/api/todo/1
 
 ## Extra Credit
 
-You can check what's going on using the Todo app using with your update IP address
+You can check what's going on using the Todo app using (with updated IP address)
 
 https://todo-syndesis.192.168.42.72.nip.io/
 
