@@ -7,7 +7,7 @@ This scenario send a Hello World message to the Log Connector.
 
 Link to a screencast of this quickstart on our youtube channel:
 
-[![Hello World Quickstart](https://i9.ytimg.com/vi/Z81TyyvBxy0/mq2.jpg)](https://youtu.be/Z81TyyvBxy0)
+[![Hello World Quickstart](https://i9.ytimg.com/vi/Z81TyyvBxy0/mq2.jpg?sqp=CKDbnN4F&rs=AOn4CLB01kIRWNcyX4o_14AdCLuVsKb2SQ)](https://youtu.be/Z81TyyvBxy0)
 
 
 ## Getting Started
