@@ -28,3 +28,19 @@ The output of the Start connection are the fields "first_name, last_name, compan
 
 * We used a Database Connector to read and write from and to a table.
 * We used the datamapper to map in and output data.
+
+## Extra Credit
+
+You can check what's going on using the Todo app using (with updated IP address)
+
+https://todo-syndesis.192.168.42.72.nip.io/
+
+and you can login to the DB pod using
+
+```
+oc get pods
+oc rsh syndesis-db-1-c84cz
+sh-4.2$ psql -Usampledb
+sampledb=> select * from todo;
+```
+
