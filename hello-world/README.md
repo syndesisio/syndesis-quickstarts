@@ -1,7 +1,8 @@
 # Hello World!
 
-Introduction
-This scenario send a Hello World message to the Log Connector. 
+## Introduction
+
+This scenario sends a Hello World message to the Log Connector. 
 
 ## Screencast of this Quickstart
 
