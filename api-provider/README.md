@@ -33,7 +33,7 @@ Make sure to use the externalURL for your integration. Now we are ready to play 
 ### 1. Create Task
 
 ```
-curl -k --header "Content-Type: application/json" --request POST --data '{ "task":"my new task!"}' $externalURL/api/todo
+curl -k --header "Content-Type: application/json" --request POST --data '{ "task":"my new task!"}' $externalURL/todo
 
 {"id":1,"task":"my new task!","completed":false}
 ```
@@ -42,7 +42,7 @@ curl -k --header "Content-Type: application/json" --request POST --data '{ "task
 ### 2. Get Task by ID
 
 ```
-curl -k $externalURL/api/todo/1 
+curl -k $externalURL/todo/1 
 
 {"id":1,"task":"my new task!","completed":false}
 ```
@@ -50,7 +50,7 @@ curl -k $externalURL/api/todo/1
 ### 3. Delete Task for ID
 
 ```
-curl -k -X DELETE $externalURL/api/todo/1
+curl -k -X DELETE $externalURL/todo/1
 ```
 
 ## Extra Credit
