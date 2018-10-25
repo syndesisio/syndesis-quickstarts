@@ -10,4 +10,4 @@ Syndesis lets you build application without writing any code. Perhaps the easies
 
   * [Hello World](https://github.com/syndesisio/syndesis-quickstarts/tree/master/hello-world)
   * [DB 2 DB](https://github.com/syndesisio/syndesis-quickstarts/tree/master/db-2-db)
-  * [API Connector](https://github.com/syndesisio/syndesis-quickstarts/tree/master/api-provider)
+  * [API Provider](https://github.com/syndesisio/syndesis-quickstarts/tree/master/api-provider)
