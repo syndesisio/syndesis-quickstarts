@@ -11,4 +11,4 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [Hello World](hello-world)
   * [DB 2 DB](db-2-db)
   * [Twitter 2 DB](twitter-2-db)
-  * [API Connector](api-provider)
+  * [API Provider](api-provider)
