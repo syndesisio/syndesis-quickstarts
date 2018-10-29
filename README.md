@@ -47,5 +47,5 @@ Syndesis lets you build application without writing any code. Perhaps the easies
 
 We are an Open Source, Apache 2 Licensed project. You are free to use our project but to ensure the health of our project we need your feedback. Become a part of [our community](https://syndesis.io/community/). We love hearing your experiences, please log any issues you find or even better contribute a patch back for it. Good luck, and please give us feedback! We love you!
 
-@Syndesisio
+[@Syndesisio](https://twitter.com/syndesisio)
 
