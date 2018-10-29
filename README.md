@@ -1,5 +1,8 @@
 # Syndesis Quickstarts
 
+<img align="left" width="144" height="86" src="img//quickstart.jpg">
+<i>Let's fire it up! Syndesis quick start Firestarters light integration fires quickly and easily. Replaces messy camel and kindling. Each 18oz pack contains 4 firelighters. Great for fireplaces, outdoor fireplaces and fire pits, wood stoves, and campfires. Syndesis quick start Firelighters are made from wax and a blend of recycled and **renewable** biomass fibers.</i>
+
 ## Introduction to Syndesis
 
 Syndesis is a cloud native application targeted at systems integration. It leverages Apache Camel, and adds a UI layer that helps developers, and more importantly the more technically business analysist, to create integrations without writing any code. Integrations are deployed as Spring Boot applications inside a container onto OpenShift. 
@@ -34,12 +37,15 @@ This will take a few minutes depending on your download speed, but this is all t
 
 Syndesis lets you build application without writing any code. Perhaps the easiest way to learn about Syndesis is to simply run to quickstarts. The quickstarts are zero code, so instead we offer Syndesis integration `exports` from scenarios we built for you. You can try them out by `importing` an export as an integration into Syndesis. After the import you sometimes may need to re-enter some connection information like passwords. The accompanying README should detail this. We have ordered the Quickstarts loosely ordered by simplicity, so it is recommended to start from the top of this list. 
 
-Good luck, and please give us feedback, become part of our community and start contributing some code back! We love you!
-
   * [Hello World](hello-world)
   * [DB 2 DB](db-2-db)
   * [Twitter 2 DB](twitter-2-db)
   * [API Provider](api-provider)
   
 ## Become part of the Syndesis community!
-We are an Open Source, Apache 2 Licensed project. You are free to use our project but to ensure the health of our project we need your feedback. Become a part of [our community](https://syndesis.io/community/). We love hearing your experiences, please log any issues you find or even better contribute a patch back for it.
+<img align="left" width="200" height="200" src="img//hey-girl-read-the-quick-start-guide-and-call-me-back-k.jpg">
+
+We are an Open Source, Apache 2 Licensed project. You are free to use our project but to ensure the health of our project we need your feedback. Become a part of [our community](https://syndesis.io/community/). We love hearing your experiences, please log any issues you find or even better contribute a patch back for it. Good luck, and please give us feedback! We love you!
+
+@Syndesisio
+
