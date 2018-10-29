@@ -17,7 +17,7 @@ brew install docker-machine-driver-xhyve
 sudo chown root:wheel $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
-For more details on the commands above, use a different virtualization technology, or if you’re on a different platform see Setting Up the Virtualization Environment. To install minishift itself use
+For more details on the commands above, use a different virtualization technology, or if you’re on a different platform see [Setting Up the Virtualization Environment](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html). To install minishift itself use
 ```
 brew cask install minishift
 ```
