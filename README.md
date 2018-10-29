@@ -11,7 +11,7 @@ However if you’re like me and you want to be able try things out by running it
   * Run some QuickStarts
 
 ## Install a local mini cloud called MiniShift
-In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of OpenShift OKD running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox. To use xHyve on OSX use
+In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of [OpenShift OKD](https://docs.okd.io/latest/welcome/index.html) running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox. To use **xHyve** on **OSX** use
 ```
 brew install docker-machine-driver-xhyve
 sudo chown root:wheel $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
@@ -21,7 +21,7 @@ For more details on the commands above, use a different virtualization technolog
 ```
 brew cask install minishift
 ```
-or simply download the minishift binary from github. Hop onto IRC (#ipaas-dev) to chat with us if you need help with any of this!
+or simply download the minishift binary from [github](https://github.com/minishift/minishift/releases). Hop onto IRC (#ipaas-dev) to chat with us if you need help with any of this!
 
 ## Install Syndesis
 We will now download the docker images from our official dockerhub repository and start them on your minishift installation using
@@ -40,3 +40,6 @@ Good luck, and please give us feedback, become part of our community and start c
   * [DB 2 DB](db-2-db)
   * [Twitter 2 DB](twitter-2-db)
   * [API Provider](api-provider)
+  
+## Become part of the Syndesis community!
+We are an Open Source, Apache 2 Licensed project. You are free to use our project but to ensure the health of our project we need your feedback. Become a part of [our community](https://syndesis.io/community/). We love hearing your experiences, please log any issues you find or even better contribute a patch back for it.
