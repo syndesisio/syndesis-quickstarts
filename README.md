@@ -42,6 +42,8 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [Twitter 2 DB](twitter-2-db)
   * [API Provider](api-provider)
   
+  ![Integration Quickstarts](img/integrations.png)
+  
 ## Become part of the Syndesis community!
 <img align="left" width="200" height="200" src="img//hey-girl-read-the-quick-start-guide-and-call-me-back-k.jpg">
 
