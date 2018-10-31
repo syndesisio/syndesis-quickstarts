@@ -57,7 +57,7 @@ add a Template Step between Start and Finish and import the `gmail.tmpl` templat
 then insert two datamapper steps
 
 ![Datamapper Step 1](img/e_twitter2template.png)
-*Figure 9. Add Twitter to Template Datamapper Step
+*Figure 9. Add Twitter to Template Datamapper Step*
 
 ```
 CreatedAt -> body.time
@@ -66,7 +66,7 @@ user/screenname -> body.name
 ```
 
 ![Datamapper Step 2](img/d_template2email.png)
-*Figure 10. Add Template to GMail Datamapper Step
+*Figure 10. Add Template to GMail Datamapper Step*
 
 ```
 message -> text
