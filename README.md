@@ -49,6 +49,11 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   
   ![Integration Quickstarts](img/quickstarts.png)
   
+### Acquire OAuth Credentials for
+  * [Twitter](twitter-2-db/TwitterCredentials.md)
+  * [GMail](twitter-2-gmail/GmailCredentials.md)
+  
+  
 ## Become part of the Syndesis community!
 <img align="left" width="200" height="200" src="img//hey-girl-read-the-quick-start-guide-and-call-me-back-k.jpg">
 
