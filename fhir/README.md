@@ -50,4 +50,4 @@ and add Log Steps before and after the DataMapper, then Deploy the integration a
 ## What did we learn?
 
 * We learned how to Read and Update a record on a FHIR server.
-* We learned to navigate the complex FHIR API in the DataMapper and we mapped some fields.
+* We learned to navigate the complex FHIR API using JSON/XML in the DataMapper and we mapped some fields.
