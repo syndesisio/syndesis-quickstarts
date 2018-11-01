@@ -49,7 +49,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   
   ![Integration Quickstarts](img/quickstarts.png)
   
-### Acquire OAuth Credentials for
+### Acquire OAuth Credentials for the Setting Section
   * [Twitter](twitter-2-db/TwitterCredentials.md)
   * [GMail](twitter-2-gmail/GmailCredentials.md)
   
