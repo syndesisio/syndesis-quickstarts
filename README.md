@@ -37,12 +37,14 @@ This will take a few minutes depending on your download speed, but this is all t
 
 Syndesis lets you build application without writing any code. Perhaps the easiest way to learn about Syndesis is to simply run to quickstarts. The quickstarts are zero code, so instead we offer Syndesis integration `exports` from scenarios we built for you. You can try them out by `importing` an export as an integration into Syndesis. After the import you sometimes may need to re-enter some connection information like passwords. The accompanying README should detail this. We have ordered the Quickstarts loosely ordered by simplicity, so it is recommended to start from the top of this list. 
 
+### Integrations
   * [Hello World](hello-world) - log 'Hello World!'
   * [DB 2 DB](db-2-db) - read from a database table, insert in another database table
   * [FHIR 2 FHIR](fhir) - breath 'fire' from a FHIR REST service and update the same record
   * [Twitter 2 DB](twitter-2-db) - search twitter and push matches to a database
-  * [Twitter 2 GMail](twitter-2-gmail) - search twitter and email matches out in the body
+  * [Twitter 2 GMail](twitter-2-gmail) - search twitter and send out matches in the body of an email
   
+### API 
   * [API Provider](api-provider) - create and expose a REST interface to (remotely) interact with integration flows.
   
   ![Integration Quickstarts](img/quickstarts.png)
@@ -50,7 +52,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
 ## Become part of the Syndesis community!
 <img align="left" width="200" height="200" src="img//hey-girl-read-the-quick-start-guide-and-call-me-back-k.jpg">
 
-We are an Open Source, Apache 2 Licensed project. You are free to use our project but to ensure the health of our project we need your feedback. Become a part of [our community](https://syndesis.io/community/). We love hearing your experiences, please log any issues you find or even better contribute a patch back for it. Good luck, and please give us feedback! We love you!
+We are an Open Source, Apache 2 Licensed project. You are free to use our project but to ensure the health of our project we need your feedback. Become a part of [our community](https://syndesis.io/community/). Did I menation we love hearing your experiences? Please log any issues you find or even better contribute a patch back for it. Good luck, and please give us feedback! We love you!
 
 [@Syndesisio](https://twitter.com/syndesisio)
 
