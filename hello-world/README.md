@@ -19,4 +19,7 @@ The start action is a Simple Timer that fires every minute. The (empty) message 
 
 ## What did we learn?
 
-We learned to build and deploy our first integration with as Start Connector a Timer, and as Finish Connector a Logger. A message is send every minute and shows up in the Integration Activity screen.
+* We learned to build and deploy our first integration with as Start Connector a Timer, 
+* and as Finish Connector a Logger. 
+
+A message is send every minute and shows up in the Integration Activity screen.
