@@ -41,6 +41,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [Hello World](hello-world) - log 'Hello World!'
   * [DB 2 DB](db-2-db) - read from a database table, insert in another database table
   * [FHIR 2 FHIR](fhir) - breath 'fire' from a FHIR REST service and update the same record
+  * [DB 2 API Connector](db-2-api-connector) - Create a Custom Connector to the Todo REST API
   * [Twitter 2 DB](twitter-2-db) - search twitter and push matches to a database
   * [Twitter 2 GMail](twitter-2-gmail) - search twitter and send out matches in the body of an email
   
