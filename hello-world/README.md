@@ -23,3 +23,7 @@ The start action is a Simple Timer that fires every minute. The (empty) message 
 * and as Finish Connector a Logger. 
 
 A message is send every minute and shows up in the Integration Activity screen.
+
+## Issues
+* Why are you using the LogStep to a log a custom message and not the LogConnector? [issue 3884](https://github.com/syndesisio/syndesis/issues/3884)
+* Why do the Connectors always log `null`? [issue 3880](https://github.com/syndesisio/syndesis/issues/3880)
