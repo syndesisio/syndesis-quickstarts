@@ -14,24 +14,24 @@ However if you’re like me and you want to be able try things out by running it
   * Run some QuickStarts
 
 ## Install a local mini cloud called MiniShift
-In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of [OpenShift OKD](https://docs.okd.io/latest/welcome/index.html) running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox. To use **xHyve** on **OSX** use
+In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of [OpenShift OKD](https://docs.okd.io/latest/welcome/index.html) running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox. To use **xHyve** on **OSX** using [homebrew](https://brew.sh)
 ```
 brew install docker-machine-driver-xhyve
 sudo chown root:wheel $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
-For more details on the commands above, use a different virtualization technology, or if you’re on a different platform see [Setting Up the Virtualization Environment](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html). To install minishift itself use
+For more details on the commands above, use a different virtualization technology, or if you’re not using OSX see [Setting Up the Virtualization Environment](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html). To install [minishift](https://www.okd.io/minishift/) itself use
 ```
 brew cask install minishift
 ```
-or simply download the minishift binary from [github](https://github.com/minishift/minishift/releases). Hop onto IRC (#ipaas-dev) to chat with us if you need help with any of this!
+or simply download the minishift binary from [github](https://github.com/minishift/minishift/releases). Hop onto [IRC](https://webchat.freenode.net) (#syndesis) to chat with us if you need help with any of this!
 
 ## Install Syndesis
 We will now download the docker images from our official dockerhub repository and start them on your minishift installation using
 ```
 bash <(curl -sL https://syndes.is/start)
 ```
-This will take a few minutes depending on your download speed, but this is all there is to it. For more details see syndesis.io.
+This will take a few minutes depending on your download speed, but this is all there is to it. For more details see [syndesis.io].
 
 ## Let's run some QuickStarts
 
