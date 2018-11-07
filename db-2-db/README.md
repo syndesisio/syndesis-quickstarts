@@ -20,7 +20,7 @@ The Start connection fires according to a simple schedule and selects rows from 
 
 The Finish connection inserts data into the contact table which in this case is in the very same database.
 
-`INSERT (task, completed) INTO todo (:#task, 0)`
+`INSERT INTO todo (task, completed) VALUES (:#task, 0)`
 
 The output of the Start connection are the fields "first_name, last_name, company, lead_source and create_date". The input is simply one field 'task'. So there is a data shape mismatch and a 'datamapper' is required. In the datamapper we combine `firstname + " " + lastname + " " + company` and map that into the `task` field. Note that the data shapes are calculated dynamically based on the queries given in the database donnections. Parameters are prefixed with `:#`.
 
@@ -31,11 +31,11 @@ The output of the Start connection are the fields "first_name, last_name, compan
 
 ## Extra Credit
 
-You can check what's going on using the Todo app using (with updated IP address)
+You can check what's going on using the Todo app using the url you obtain using 
 
-https://todo-syndesis.192.168.42.72.nip.io/
+echo http://todo-syndesis.`minishift ip`.nip.io
 
-and you can login to the DB pod using
+and also, you can login to the DB pod using
 
 ```
 oc get pods
