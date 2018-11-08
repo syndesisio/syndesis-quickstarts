@@ -19,7 +19,7 @@ and past it into the Use a URL Field
 ![Create API Client Review](img/3-review-actions.png)
 *Figure 3. Review RESTful Actions*
 
-Then upload the todo-icon.png from the quickstart directory and change the url from `https` to `http`, this because our certificated a selfsignedm and we want to avoid issues with that.
+Then upload the todo-icon.png from the quickstart directory and change the url from `https` to `http`, this because our certificated a selfsigned and we want to avoid issues with that.
 
 ![Create API Client Edit](img/4-edit-icon-url.png)
 *Figure 4. Edit Icon and URL*
