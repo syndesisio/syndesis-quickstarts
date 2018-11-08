@@ -1,6 +1,6 @@
-# Connector for the TODO REST API
+# Create a Connector for the TODO REST API
 
-## Introdiction
+## Introduction
 Many application have a RESTful API. Syndesis allows you to create a *custom* connector specific for a certain application. In this case we pick the TODO REST API. To start creating such a API Client Connector navigate to `Customizations > API Client Connectors` and click on the blue `Create API Connector` button
 
 ![Create API Client Connector](img/1-create-api-connector.png)
