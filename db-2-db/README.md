@@ -12,7 +12,7 @@ Link to a screencast of this quickstart on our youtube channel:
 
 ## Getting Started
 
-You can follow with the video above to build the integration or you can import the DB-2-DB-export.zip.
+You can follow with the video above to build the integration or you can import the [DB-2-DB-export.zip](DB-2-DB-export.zip?raw=true).
 
 The Start connection fires according to a simple schedule and selects rows from a table every minute. 
 

@@ -15,7 +15,7 @@ Link to a screencast of this quickstart on our youtube channel:
 
 ## Getting Started
 
-You can follow with the video above to build the integration or you can import the FHIR-export.zip, or you can create from scratch starting with configuring a FHIR Connection. For this I'm using the following FHIR service endpoint
+You can follow with the video above to build the integration or you can import the [FHIR-export.zip](FHIR-export.zip?raw=true), or you can create from scratch starting with configuring a FHIR Connection. For this I'm using the following FHIR service endpoint
 
 ```
 http://hapi.fhir.org/baseDstu3/

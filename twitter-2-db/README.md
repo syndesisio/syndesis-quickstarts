@@ -29,7 +29,7 @@ First we need to set up a `Connection` using the Twitter `Connector`. For that y
 *Figure 5. Notice the new Shiny Twitter Connection*
 
 
-You can follow with the video above to build the integration or you can import the Twitter2Db-export.zip.
+You can follow with the video above to build the integration or you can import the [Twitter2Db-export.zip](Twitter2Db-export.zip?raw=true).
 
 The Start is a Twitter connecton that executes a search every 5 seconds for 
 
