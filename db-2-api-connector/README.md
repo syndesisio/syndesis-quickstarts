@@ -46,7 +46,7 @@ and see a new task with content 'Joe Jackson Red Hat' appear every minute.
 
 ## Extra credit
 
-Set up an integration to Reverb using OAuth like @zregvart did:
+Set up an integration to Reverb using OAuth like [@zregvart](https://twitter.com/zregvart) did:
 
 [![DB-2-Reverb](https://img.youtube.com/vi/UwPzY3svD-s/0.jpg)](https://youtu.be/UwPzY3svD-s)
 
