@@ -44,3 +44,10 @@ and see a new task with content 'Joe Jackson Red Hat' appear every minute.
 * We build an integration from a the SampleDB contact table to the Todo App.
 * We used the datamapper to map in and output data.
 
+## Extra credit
+
+Set up an integration to Reverb using OAuth like @zregvart did:
+
+[![DB-2-Reverb](https://img.youtube.com/vi/UwPzY3svD-s/0.jpg)](https://youtu.be/UwPzY3svD-s)
+
+Send us back the instructions and don't forget to add the instruction to obtain the OAuth credentials from Reverb, as well as the export.zip file!
