@@ -33,14 +33,14 @@ Click Done, and now add the Postgres SampleDB connection and use
  ```
  
 ![DataMapper](img/datamapper.png)
-* Figure 1. Mapping task to task.
+*Figure 1. Mapping task to task.*
 
 Now publish the integration calling it Webhook2Db.
 
 On a succesful deployment it will show an externalURL. 
 
 ![externalURL](img/external-url.png)
-* Figure 2. ExternalURL of the webhook.
+*Figure 2. ExternalURL of the webhook.*
 
 Put this into your buffer and create a env param like
 
@@ -64,6 +64,9 @@ echo https://todo-syndesis.`minishift ip`.nip.io/
 
 ![Todo App](img/mynewtask.png)
 *Figure 3. Todo App with new Tasks appearing*
+
+## What did we learn?
+* We learned how to create a webhook to invoke an integration.
 
 ## Extra Credit
 
