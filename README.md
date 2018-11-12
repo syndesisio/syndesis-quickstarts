@@ -45,8 +45,9 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [Twitter 2 DB](twitter-2-db) - search twitter and push matches to a database
   * [Twitter 2 GMail](twitter-2-gmail) - search twitter and send out matches in the body of an email
   
-### API 
-  * [API Provider](api-provider) - create and expose a REST interface to (remotely) interact with integration flows.
+### API
+  * [WebHook](webhook-2-db) - create and expose a webhook to invoke an integration with some data
+  * [API Provider](api-provider) - create and expose a REST interface to (remotely) interact with integration flows
   
   ![Integration Quickstarts](img/quickstarts.png)
   
