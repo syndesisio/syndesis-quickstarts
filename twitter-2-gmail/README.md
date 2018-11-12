@@ -34,7 +34,7 @@ Secondly you will need to do the same exact thing for the GMail Connector to cre
 
 ## Setting up the Integration
 
-You can follow with the video above to build the integration or you can import the [Twitter2GMail-export.zip](Twitter2GMail-export.zip?raw=true), or you can create the a brand new integration.
+You can follow with the video above to build the integration or you can import the [Twitter2Gmail-export.zip](Twitter2Gmail-export.zip?raw=true), or you can create the a brand new integration.
 
 The Start is a Twitter connecton that executes a search every 5 seconds for 
 
