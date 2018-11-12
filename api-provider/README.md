@@ -1,7 +1,7 @@
 # API Provider
 
 ## Introduction
-In this scenario we start with a OpenAPI/Swagger file [task-api.json](task-api.json?raw=true) containing an API definition to the TODO Task Management example. We will demonstrate how to create a REST API that can invoke your integration flows. Note that at the moment the example integrations use the SQL connector only. We will add other connectors to these flows soon. Adding a REST interface to your integrations allows you to integrate your integrations, so that they can be invokated on demand.
+In this scenario we start with a OpenAPI/Swagger file [task-api.json](task-api.json?raw=true) containing an API definition to the TODO Task Management example. We will demonstrate how to create a REST API that can invoke your integration flows. Note that at the moment the example integrations use the SQL connector only. We will add other connectors to these flows soon. Adding a REST interface to your integrations allows you to integrate your integrations, so that they can be invoked on demand.
 
 
 ## Screencast of this Quickstart
