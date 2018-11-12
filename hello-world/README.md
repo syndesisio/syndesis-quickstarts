@@ -13,7 +13,7 @@ Link to a screencast of this quickstart on our youtube channel:
 
 ## Getting Started
 
-You can follow with the video above to build the integration or you can import the [HelloWorld-export.zip](HelloWorld-export.zip)
+You can follow with the video above to build the integration or you can import the [HelloWorld-export.zip](HelloWorld-export.zip?raw=true)
 
 The start action is a Simple Timer that fires every minute. The (empty) message is then sent to a logger using the LogConnector. Unfortunately the current LogConnector does not allow adding a custom message, the way our Step Logger does.
 
