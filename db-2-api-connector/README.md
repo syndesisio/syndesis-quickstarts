@@ -15,7 +15,7 @@ Link to a screencast of this quickstart on our youtube channel:
 
 ## Getting Started
 
-You can follow with the video above to build the integration or you can import the DB-2-API-Connector-export.zip, or you can follow the instructions below. 
+You can follow with the video above to build the integration or you can import the [DB-2-API-Connector-export.zip](DB-2-API-Connector-export.zip?raw=true), or you can follow the instructions below. 
 
 Before you can create the integration make sure you created your own custom [Todo API Connection](APIConnector.md). To Start select the PostgresDB Connection to the SampleDB and select the `Periodic SQL Invocation` action using 
 
