@@ -13,7 +13,7 @@ Link to a screencast of this quickstart on our youtube channel:
 
 ## Getting Started
 
-You can start by using the API Provider connector and selecting the task-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the `TaskAPI-export.zip` file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains three flows:
+You can start by using the API Provider connector and selecting the task-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip] file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains three flows:
 
   1. Create Task          POST /todo
   2. Get Task by ID.      GET /todo/{id}
