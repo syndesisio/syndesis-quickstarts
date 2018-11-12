@@ -7,7 +7,7 @@
 
 Syndesis is a cloud native application targeted at systems integration. It leverages Apache Camel, and adds a UI layer that helps developers, and more importantly the more technically business analysist, to create integrations without writing any code. Integrations are deployed as Spring Boot applications inside a container onto OpenShift. 
 
-The easiest way to try Syndesis is to use a trial of the product called Fuse Online. You can sign up at https://www.redhat.com/en/technologies/jboss-middleware/fuse-online, and skip right to the QuickStart section.
+The easiest way to try Syndesis is to use a trial of the product called Fuse Online. You can sign up at [fuse-online](https://www.redhat.com/en/technologies/jboss-middleware/fuse-online), and skip right to the QuickStart section.
 However if you’re like me and you want to be able try things out by running it locally, you probably want to run the Syndesis project bits. This is where this blog is about. I will take you through to the few straightforward steps to
   * Install a mini cloud ‘MiniShift’ on your laptop
   * Install Syndesis on Minishift
