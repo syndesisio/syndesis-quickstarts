@@ -62,6 +62,9 @@ You should see the new task in the todo app. You can obtain the URL to this app 
 echo https://todo-syndesis.`minishift ip`.nip.io/
 ```
 
+![Todo App](../db-2-api-connector/img/todo-app.png)
+*Figure 3. Todo App with new Tasks appearing*
+
 ## Extra Credit
 
 Add a Task in the Todo app by using Google assistant and nothing but your voice.
