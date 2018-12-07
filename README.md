@@ -1,7 +1,7 @@
 # Syndesis Quickstarts
 
 [<img align="left" width="144" height="86" src="img//quickstart.jpg">](https://www.amazon.com/Duraflame-04053-Quickstart-Firelighter/dp/B00ZPT1CXK/ref=pd_cp_201_1?pd_rd_w=DD0Yf&pf_rd_p=ef4dc990-a9ca-4945-ae0b-f8d549198ed6&pf_rd_r=JM4KNK74VS07V3EPVEVH&pd_rd_r=392846d9-fa18-11e8-9490-c1926e26e7de&pd_rd_wg=9BuJL&pd_rd_i=B00ZPT1CXK&psc=1&refRID=JM4KNK74VS07V3EPVEVH)
-<i>Let's fire it up! Syndesis quick start Firestarters light integration fires quickly and easily. Replaces messy camel and kindling. Each 18oz pack contains 4 firelighters. Great for fireplaces, outdoor fireplaces and fire pits, wood stoves, and campfires. Syndesis quick start Firelighters are made from wax and a blend of recycled and **renewable** biomass fibers.</i>
+<i>"Let's fire it up! Syndesis quick start Firestarters light integration fires quickly and easily. Replaces messy camel and kindling. Each 18oz pack contains 4 firelighters. Great for fireplaces, outdoor fireplaces and fire pits, wood stoves, and campfires. Syndesis quick start Firelighters are made from wax and a blend of recycled and **renewable** biomass fibers."</i>
 
 ## Introduction to Syndesis
 
