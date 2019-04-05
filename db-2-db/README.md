@@ -22,6 +22,9 @@ The Finish connection inserts data into the contact table which in this case is 
 
 `INSERT INTO todo (task, completed) VALUES (:#task, 0)`
 
+The SELECT from the start step returns the collection of data. Because of that, we have to add 'split' step from which the integration is continuing for every item from the collection. 
+**Note** that in our case, the collection contains only one item so the rest of the integration after the split step is done only once. If `SELECT * FROM contact` returned 10 items, 10 items would insert in the final step.
+
 The output of the Start connection are the fields "first_name, last_name, company, lead_source and create_date". The input is simply one field 'task'. So there is a data shape mismatch and a 'datamapper' is required. In the datamapper we combine `firstname + " " + lastname + " " + company` and map that into the `task` field. Note that the data shapes are calculated dynamically based on the queries given in the database donnections. Parameters are prefixed with `:#`.
 
 ## What did we learn?
