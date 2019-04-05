@@ -29,7 +29,7 @@
         ],
         "responses": {
           "200": {
-            "description": "The newly create task",
+            "description": "The newly created task",
             "schema": {
               "$ref": "#/definitions/Todo"
             }
