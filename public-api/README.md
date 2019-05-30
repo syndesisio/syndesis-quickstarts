@@ -9,7 +9,7 @@ This quickstart includes a couple of simple integrations and a Jenkins pipeline 
 
 ## Screencast of this Quickstart
 
-Link to a screencast of this quickstart on our youtube channel:
+Link to a screencast of this quickstart on Vimeo:
 
 [![Public API Quickstart](http://i.vimeocdn.com/video/787404345_640.jpg)](https://vimeo.com/339390306)
 
