@@ -51,12 +51,12 @@ Note that at this time Syndesis does NOT support SSL URIs.
 ![Create Kafka Broker Connection](../kafka-2-db/img/CreateKafkaBrokerConnection.png)
 *Figure 1. Create a Kafka Broker Connection*
 
-![Verify Kafka Broker Connection](../kafka-2-db/img/VerifyKafkaBrokerConnection.png)
+![Verify Kafka Broker Connection](../kafka-2-db/img/VerifyKafkaConnection.png)
 *Figure 2. Verify a Kafka Broker Connection*
 
 When the verification checks out you ready to save (and name) this connection so it can be used in your integrations.
 
-![Save Kafka Broker Connection](../kafka-2-db/img/SaveKafkaBrokerConnection.png)
+![Save Kafka Broker Connection](../kafka-2-db/img/SaveKafkaConnection.png)
 *Figure 3. Save a Kafka Broker Connection*
 
 ## References
