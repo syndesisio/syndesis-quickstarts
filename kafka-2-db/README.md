@@ -35,7 +35,7 @@ Now publish the integration calling it Kafka2Db.
 
 ## Send a message
 
-You should still have the [KafkaBrokerDeployment.md](kafka-producer) running, so from this producer send a message with content
+You should still have the [kafka-producer](KafkaBrokerDeployment.md) running, so from this producer send a message with content
 
 ```
 { "task":"task created from kafka message" }
