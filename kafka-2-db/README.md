@@ -39,6 +39,7 @@ You should still have the [KafkaBrokerDeployment.md](kafka-producer) running, so
 
 ```
 { "task":"task created from kafka message" }
+```
 
 You should see the new task in the todo app. You can obtain the URL to this app using
 
