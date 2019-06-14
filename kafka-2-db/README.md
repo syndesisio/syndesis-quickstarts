@@ -35,13 +35,7 @@ Now publish the integration calling it Kafka2Db.
 
 ## Send a message
 
-You should still have the kafka-producer running,
-
-```
-oc run kafka-producer -ti --image=strimzi/kafka:0.11.4-kafka-2.1.0 --rm=true --restart=Never -- bin/kafka-console-producer.sh --broker-list my-cluster-kafka-bootstrap:9092 --topic my-topic
-```
-
-Now from the producer send a message with content
+You should still have the [KafkaBrokerDeployment.md](kafka-producer) running, so from this producer send a message with content
 
 ```
 { "task":"task created from kafka message" }
@@ -53,7 +47,7 @@ echo https://todo-syndesis.`minishift ip`.nip.io/
 ```
 
 ![Todo App](img/mynewkafkatask.png)
-*Figure 3. Todo App with new Tasks appearing*
+*Figure 1. Todo App with new Tasks appearing*
 
 ## What did we learn?
 * We learned how to setuop a Kafka Broker in our `my-project` namespace
