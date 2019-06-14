@@ -31,14 +31,33 @@ Once the cluster is running, you can run a simple producer to send messages to K
 ```
 oc run kafka-producer -ti --image=strimzi/kafka:0.11.4-kafka-2.1.0 --rm=true --restart=Never -- bin/kafka-console-producer.sh --broker-list my-cluster-kafka-bootstrap:9092 --topic my-topic
 ```
-
-and to receive them
+leave this running and you can type message here. In a different window run
 
 ```
 oc run kafka-consumer -ti --image=strimzi/kafka:0.11.4-kafka-2.1.0 --rm=true --restart=Never -- bin/kafka-console-consumer.sh --bootstrap-server my-cluster-kafka-bootstrap:9092 --topic my-topic --from-beginning
 ```
+to receive them. Leave this running too.
 
-Enjoy your Apache Kafka cluster, running on MiniShift!
+## Setup a Kafka Connection
+
+Now that we have a working Kafka Broker we can create a Kafka Connection using a Kafka Broker URI of
+
+```
+my-cluster-kafka-bootstrap:9092
+```
+
+Note that at this time Syndesis does NOT support SSL URIs.
+
+![Create Kafka Broker Connection](../kafka-2-db/img/CreateKafkaBrokerConnection.png)
+*Figure 1. Create a Kafka Broker Connection*
+
+![Verify Kafka Broker Connection](../kafka-2-db/img/VerifyKafkaBrokerConnection.png)
+*Figure 2. Verify a Kafka Broker Connection*
+
+When the verification checks out you ready to save (and name) this connection so it can be used in your integrations.
+
+![Save Kafka Broker Connection](../kafka-2-db/img/SaveKafkaBrokerConnection.png)
+*Figure 3. Save a Kafka Broker Connection*
 
 ## References
 [1] Provision the Apache Kafka cluster https://strimzi.io/quickstarts/okd/
