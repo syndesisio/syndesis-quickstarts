@@ -1,6 +1,9 @@
 # Kafka Broker Deployment
 
 To run a Kafka Broker in your `my-project` you can use [strimzi](https://strimzi.io/quickstarts/okd/).
+
+## Installation
+
 First login your minishift installation as the `cluster-admin` user, and deploy the strimzi install files:
 
 ```
@@ -20,6 +23,8 @@ my-cluster-kafka-0                            2/2     Running   1          91s
 my-cluster-zookeeper-0                        2/2     Running   0          2m30s
 strimzi-cluster-operator-78f8bf857-kpmhb      1/1     Running   0          3m10s
 ```
+
+## Send and Receive some message
 
 Once the cluster is running, you can run a simple producer to send messages to Kafka topic (the `my-topic` topic will be automatically created):
 
