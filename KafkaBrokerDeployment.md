@@ -22,3 +22,5 @@ strimzi-cluster-operator-78f8bf857-kpmhb      1/1     Running   0          3m10s
 ```
 
 
+## References
+[1] Provision the Apache Kafka cluster https://strimzi.io/quickstarts/okd/
