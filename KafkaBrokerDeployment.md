@@ -21,6 +21,19 @@ my-cluster-zookeeper-0                        2/2     Running   0          2m30s
 strimzi-cluster-operator-78f8bf857-kpmhb      1/1     Running   0          3m10s
 ```
 
+Once the cluster is running, you can run a simple producer to send messages to Kafka topic (the `my-topic` topic will be automatically created):
+
+```
+oc run kafka-producer -ti --image=strimzi/kafka:0.11.4-kafka-2.1.0 --rm=true --restart=Never -- bin/kafka-console-producer.sh --broker-list my-cluster-kafka-bootstrap:9092 --topic my-topic
+```
+
+and to receive them
+
+```
+oc run kafka-consumer -ti --image=strimzi/kafka:0.11.4-kafka-2.1.0 --rm=true --restart=Never -- bin/kafka-console-consumer.sh --bootstrap-server my-cluster-kafka-bootstrap:9092 --topic my-topic --from-beginning
+```
+
+Enjoy your Apache Kafka cluster, running on MiniShift!
 
 ## References
 [1] Provision the Apache Kafka cluster https://strimzi.io/quickstarts/okd/
