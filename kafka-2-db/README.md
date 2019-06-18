@@ -14,7 +14,7 @@ Link to a screencast of this quickstart on our youtube channel:
 
 ## Getting Started
 
-In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [Kafka2Db-export.zip](Kafka2Db-export.zip?raw=true) file and start the import. Alternatively you can start with a create a new integration, and select the kafka message broker as it's start connection.
+First make sure you have a running Kafka broker and you created a Kafka Connection (see the introduction above). In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [Kafka2Db-export.zip](Kafka2Db-export.zip?raw=true) file and start the import. Alternatively you can start with a create a new integration, and select the kafka message broker as it's start connection.
 
 Select the `my-topic` topic, click 'next',
 select JSON Instance and add an example JSON message such as:
