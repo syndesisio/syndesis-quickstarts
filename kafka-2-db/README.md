@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This shows how to use a Kafka topic in an integration to insert records into a database. Before you can start you will need a Kafka Broker. To setup a Kafka broker on in your `my-project` namespace on Minishift follow the instructions on [KafkaBrokerDeployment.md](KafkaBrokerDeployment.md).
+This quickstart demonstrates how to use a Kafka topic in an integration to insert records into a database. **Before you can start you will need a Kafka Broker**. To setup a Kafka broker on in your `my-project` namespace on Minishift follow the instructions on [KafkaBrokerDeployment.md](KafkaBrokerDeployment.md).
 
 ## Screencast of this Quickstart
 
