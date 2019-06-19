@@ -57,6 +57,15 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [GMail](twitter-2-gmail/GmailCredentials.md)
   
   
+## Interesting Projects
+
+Here is a list of projects using Syndesis/FuseOnline:
+
+  * [Chuck Norris Streams](https://github.com/lbroudoux/chuck-norris-streams)
+  
+(if you want a link to your project added, just open a PR)
+
+
 ## Become part of the Syndesis community!
 <img align="left" width="200" height="200" src="img//hey-girl-read-the-quick-start-guide-and-call-me-back-k.jpg">
 
@@ -65,12 +74,6 @@ We are an Open Source, Apache 2 Licensed project. You are free to use our projec
 [@Syndesisio](https://twitter.com/syndesisio)
 
 
-## Interesting Projects
 
-Here is a list of projects using Syndesis/FuseOnline:
-
-  * [Chuck Norris Streams](https://github.com/lbroudoux/chuck-norris-streams)
-  
-(if you want a link to your project added, just open a PR)
 
 
