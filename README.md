@@ -64,9 +64,11 @@ We are an Open Source, Apache 2 Licensed project. You are free to use our projec
 
 [@Syndesisio](https://twitter.com/syndesisio)
 
+
 ## Interesting Projects
 
-Here is a list of projects using Syndesis/FuseOnline 
+Here is a list of projects using Syndesis/FuseOnline:
+
   * [Chuck Norris Streams](https://github.com/lbroudoux/chuck-norris-streams)
   
 (if you want a link to your project added, just open a PR)
