@@ -57,7 +57,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [GMail](twitter-2-gmail/GmailCredentials.md)
   
   
-## Interesting Projects
+## Interesting 3rd Party Projects/Use Cases using Syndesis
 
 Here is a list of projects using Syndesis/FuseOnline:
 
