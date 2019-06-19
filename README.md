@@ -31,7 +31,7 @@ We will now download the docker images from our official dockerhub repository an
 ```
 bash <(curl -sL https://syndes.is/start)
 ```
-This will take a few minutes depending on your download speed, but this is all there is to it. For more details see [syndesis.io].
+This will take a few minutes depending on your download speed, but this is all there is to it. For more details see [syndesis.io](https://syndesis.io/quickstart/).
 
 ## 4. Let's run some QuickStarts
 
@@ -72,8 +72,3 @@ Here is a list of projects using Syndesis/FuseOnline:
 We are an Open Source, Apache 2 Licensed project. You are free to use our project but to ensure the health of our project we need your feedback. Become a part of [our community](https://syndesis.io/community/). Did I mention we love hearing your experiences? Please log any issues you find or even better contribute a patch back for it. Good luck, and please give us feedback! We love you!
 
 [@Syndesisio](https://twitter.com/syndesisio)
-
-
-
-
-
