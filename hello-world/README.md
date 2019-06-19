@@ -8,7 +8,7 @@ This scenario sends a Hello World message to the Log Connector.
 
 Link to a screencast of this quickstart on our youtube channel:
 
-[![Hello World Quickstart](https://img.youtube.com/vi/Z81TyyvBxy0/0.jpg)](https://youtu.be/Z81TyyvBxy0)
+[![Hello World Quickstart](https://img.youtube.com/vi/7zeBhntUAXw/0.jpg)](https://youtu.be/7zeBhntUAXw)
 
 
 ## Getting Started
@@ -23,7 +23,3 @@ The start action is a Simple Timer that fires every minute. The (empty) message 
 * and as Finish Connector a Logger. 
 
 A message is send every minute and shows up in the Integration Activity screen.
-
-## Issues
-* Why are you using the LogStep to a log a custom message and not the LogConnector? [issue 3884](https://github.com/syndesisio/syndesis/issues/3884)
-* Why do the Connectors always log `null`? [issue 3880](https://github.com/syndesisio/syndesis/issues/3880)
