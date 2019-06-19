@@ -63,7 +63,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
 Here is a list of projects using Syndesis/FuseOnline:
 
   * [Chuck Norris Streams](https://github.com/lbroudoux/chuck-norris-streams) Kafka, Debezium and Fuse demonstration based on Chuck Norris movies!
-  * Red Hat Fuse Demos [Database to Salesforce](https://www.redhat.com/en/about/videos/fuse-online-demo), [Salesforce Ordering](https://www.redhat.com/en/about/videos/salesforce-ordering), [Data Backuo to AWS S3](https://youtu.be/YXaV5pDWhy8), [AMQP and AMQ Integration Demo](https://youtu.be/5Aw92Mprumg)
+  * Red Hat Fuse Demos [Database to Salesforce](https://www.redhat.com/en/about/videos/fuse-online-demo), [Salesforce Ordering](https://www.redhat.com/en/about/videos/salesforce-ordering), [Data Backup to AWS S3](https://youtu.be/YXaV5pDWhy8), [AMQP and AMQ Integration Demo](https://youtu.be/5Aw92Mprumg)
   
   
 (if you want a link to your project added, just open a PR)
