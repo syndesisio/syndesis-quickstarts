@@ -45,6 +45,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [Twitter 2 DB](twitter-2-db) - search twitter and push matches to a database
   * [Twitter 2 GMail](twitter-2-gmail) - search twitter and send out matches in the body of an email
   * [Kafka 2 DB](kafka-2-db) - setup a Kafka Broker, then listen to a Kafka Topic and write to a database
+  * [Jira 2 Twitter](jira-2-twitter) - retrieve Jira comments and send them as Twitter direct messages
   
 ### 4.2 API
   * [WebHook](webhook-2-db) - create and expose a webhook to invoke an integration with some data
@@ -56,6 +57,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
 ### 4.3 Acquire OAuth Credentials for the Syndesis Setting Section
   * [Twitter](twitter-2-db/TwitterCredentials.md)
   * [GMail](twitter-2-gmail/GmailCredentials.md)
+  * [Jira](jira-2-twitter/JiraConnection.md)
   
   
 ## 5. Interesting 3rd Party Projects/Use Cases using Syndesis
