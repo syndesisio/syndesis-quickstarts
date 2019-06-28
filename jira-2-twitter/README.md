@@ -4,7 +4,14 @@ In this quickstart we will demonstrate how to retrieve comments from issues on J
   * you need a `Twitter App` already registered with Twitter. If you have not done this, then please follow the [Twitter App Registration](../twitter-2-db/TwitterCredentials.md) instructions. Note that you will have to wait till your Developer account is approved by Twitter so in that case it's not really *quick* start.
   * you need a `Jira account` setup with an [Application Link](https://developer.atlassian.com/cloud/jira/platform/jira-rest-api-oauth-authentication/#overview). You can use an existing Jira server or the free [Jira Software in the cloud](https://www.atlassian.com/try).
 
+## Screencast of this Quickstart
+
+Link to a screencast of this quickstart on our youtube channel:
+
+[![Jira to Twitter Quickstart](https://img.youtube.com/vi/0FF48KyoRqc/0.jpg)](https://youtu.be/0FF48KyoRqc)
+
 ## Getting Started
+
 
 ### Twitter Connection
 
