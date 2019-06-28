@@ -9,9 +9,9 @@ Syndesis is a cloud native application targeted at systems integration. It lever
 
 The easiest way to try Syndesis is to use a trial of the product called Fuse Online. You can sign up at [fuse-online](https://www.redhat.com/en/technologies/jboss-middleware/fuse-online), and skip right to the [QuickStart](#lets-run-some-quickstarts) section.
 However if you’re like me and you want to be able try things out by running it locally, you probably want to run the Syndesis project bits. This is where this blog is about. I will take you through to the few straightforward steps to
-  * [Install a mini cloud ‘MiniShift’ on your laptop](README.md#install-a-local-mini-cloud-called-minishift)
-  * [Install Syndesis on Minishift](README.md#install-syndesis)
-  * [Run some QuickStarts](README.md#lets-run-some-quickstarts)
+  * [Install a mini cloud ‘MiniShift’ on your laptop](README.md#2-install-a-local-mini-cloud-called-minishift)
+  * [Install Syndesis on Minishift](README.md#3-install-syndesis)
+  * [Run some QuickStarts](README.md#4-lets-run-some-quickstarts)
 
 ## 2. Install a local mini cloud called MiniShift
 In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of [OpenShift OKD](https://docs.okd.io/latest/welcome/index.html) running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox. To use **xHyve** on **OSX** using [homebrew](https://brew.sh)
