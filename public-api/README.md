@@ -13,6 +13,9 @@ Link to a screencast of this quickstart on Vimeo:
 
 [![Public API Quickstart](http://i.vimeocdn.com/video/787404345_640.jpg)](https://vimeo.com/339390306)
 
+*`<<Click to Play>>`*
+
+
 ## Getting Started
 
 Create a couple of simple integrations, or import the file [sample-export.zip](sample-export.zip?raw=true). 
