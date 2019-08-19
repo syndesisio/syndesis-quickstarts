@@ -10,6 +10,9 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![Jira to Twitter Quickstart](https://img.youtube.com/vi/0FF48KyoRqc/0.jpg)](https://youtu.be/0FF48KyoRqc)
 
+*`<<Click to Play>>`*
+
+
 ## Getting Started
 
 
