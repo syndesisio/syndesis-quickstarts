@@ -14,10 +14,10 @@ Link to a screencast of this quickstart on our youtube channel:
 
 First we need to set up a `Connection` using the GoogleSheets `Connector`. For that you need to go to connections and click the `Create Connection` button. 
 
-![Create Connection](../twitter-2-db/img/create-connection.png)
+![Create Connection](img/newconnection.png)
 *Figure 1. Create Connection*
 
-![Configure Connection](../twitter-2-db/img/configure-connection.png)
+![Configure Connection](img/configure-connection.png)
 *Figure 2. Configure Connection*
 
 ![Twitter Authorize](../twitter-2-db/img/twitter-oauth.png)
