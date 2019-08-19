@@ -9,6 +9,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![Webhook Quickstart](https://img.youtube.com/vi/mx6x_8QhF0Y/0.jpg)](https://youtu.be/mx6x_8QhF0Y)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
