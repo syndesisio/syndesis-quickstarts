@@ -10,6 +10,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![Twitter-2-GMail Quickstart](https://img.youtube.com/vi/Pfysm8W8sco/0.jpg)](https://youtu.be/Pfysm8W8sco)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
