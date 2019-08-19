@@ -1,4 +1,4 @@
-# Twitter to GMail using a template
+# Database to GoogleSheet
 
 In this quickstart we will demonstrate setting up an integration between a Database and GoogleSheets. There is one prerequisite which is that you set up your credentials for google sheets.
   * Please follow [Google API Creds](GoogleSheetsCredentials.md). 
