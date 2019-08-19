@@ -8,6 +8,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![Twitter-2-Db Quickstart](https://img.youtube.com/vi/og7aMWJByNs/0.jpg)](https://youtu.be/og7aMWJByNs)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
