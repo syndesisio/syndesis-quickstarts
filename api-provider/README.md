@@ -10,6 +10,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![API Provider Quickstart](https://img.youtube.com/vi/RAa1qy3WnWQ/0.jpg)](https://youtu.be/RAa1qy3WnWQ)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
