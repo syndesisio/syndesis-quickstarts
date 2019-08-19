@@ -15,7 +15,7 @@ The workflow to obtain the clientID and Secret are similar to the instructions f
 and also make sure to set the callback url which you can obtain from the top of the Settings screen in the Syndesis UI.
 
 ![CallBack URL](img/2_callback.png)
-*Figure 3. Set the Callback URL.
+*Figure 3. Set the Callback URL*
 
 You can now create a GoogleSheets Connection and these credentials will be used.
 
