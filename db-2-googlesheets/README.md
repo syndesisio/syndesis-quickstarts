@@ -29,54 +29,34 @@ First we need to set up a `Connection` using the GoogleSheets `Connector`. For t
 
 ## Setting up the Integration
 
-You can follow with the video above to build the integration or you can import the [Twitter2Gmail-export.zip](Twitter2Gmail-export.zip?raw=true), or you can create the a brand new integration.
+You can follow with the video above to build the integration or you can import the [SheetsDemo-export.zip](SheetsDemo-export.zip?raw=true), or you can create the a brand new integration.
 
-The Start is a Twitter connecton that executes a search every 5 seconds for 
-
-```
-syndesis
-```
-also set a checkmark at `Ignore tweets previously found`.
-
-![Configure Twitter Start Connection](img/a_twitter.png)
-*Figure 6. Twitter Start Connection*
-
-![Configure Gmail Finish Connection](img/b_gmail.png)
-*Figure 7. Gmail Finish Connection*
-
-add a Template Step between Start and Finish and import the `gmail.tmpl` template file.
-
-![Add Template Step](img/c_template.png)
-*Figure 8. Add Template Step*
-
-then insert two datamapper steps
-
-![Datamapper Step 1](img/e_twitter2template.png)
-*Figure 9. Add Twitter to Template Datamapper Step*
+The Start is a DB connecton that executes a search every 1 minute, using the following query
 
 ```
-CreatedAt -> body.time
-text -> body.text
-user/screenname -> body.name
+SELECT * FROM CONTACT
 ```
 
-![Datamapper Step 2](img/d_template2email.png)
-*Figure 10. Add Template to GMail Datamapper Step*
+The Finish connection is the GoogleSheets Connection.
 
-```
-message -> text
-```
+![Configure GoogleSheets Finish Connection](img/7_sheetsconfig.png)
+*Figure 5. GoogleSheets Finish Connection - screen 1*
 
-You are now ready to deploy the integration, and you should start receiving emails at the address you configured in the Finish Connection.
+![Configure GoogleSheets Finish Connection](img/8_sheetsconfig.png)
+*Figure 6. GoogleSheets Finish Connection - screen 2*
+
+add a DataMapping Step in between
+
+![DataMapper Step](img/9_datamapper.png)
+*Figure 7. Add DB to GoogleSheets DataMapping Step*
+
+
+You are now ready to deploy the integration, and you should start seeing rows being created for each time it scans the database.
 
 ## What did we learn?
 
-* We learned how to use OAuth Credentials to create a Twitter Connection.
-* We learned how to use OAuth Credentials to create a GMail Connection.
-* We learned how to use a Twitter Search.
-* We learned how to use a Template Step.
-* We learned how to use a GMail Connection to send out emails.
-* We learned to use the datamapper to map data from the Twitter search response into the Template Step.
-* We learned to use the datamapper to map data from the Template Step to an email body.
+* We learned how to use OAuth Credentials to create a GoogleSheets Connection.
+* We learned how to use a GoogleSheets connector to push records from the db into a google sheet
+* We learned to use the datamapper to map data from the Database to a Google Sheet.
 
 
