@@ -12,6 +12,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![DB-2-API-Connector Quickstart](https://img.youtube.com/vi/Ervr46Kv8VU/0.jpg)](https://youtu.be/Ervr46Kv8VU)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
