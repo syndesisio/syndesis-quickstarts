@@ -9,6 +9,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![DB-2-DB Quickstart](https://img.youtube.com/vi/BeVK5RCkog0/0.jpg)](https://youtu.be/BeVK5RCkog0)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
