@@ -10,6 +10,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![Hello World Quickstart](https://img.youtube.com/vi/7zeBhntUAXw/0.jpg)](https://youtu.be/7zeBhntUAXw)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
