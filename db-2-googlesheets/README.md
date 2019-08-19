@@ -14,22 +14,18 @@ Link to a screencast of this quickstart on our youtube channel:
 
 First we need to set up a `Connection` using the GoogleSheets `Connector`. For that you need to go to connections and click the `Create Connection` button. 
 
-![Create Connection](img/newconnection.png)
+![Create Connection](img/3_newconnection.png)
 *Figure 1. Create Connection*
 
-![Configure Connection](img/configure-connection.png)
+![Select Connector](img/4_connector.png)
 *Figure 2. Configure Connection*
 
-![Twitter Authorize](../twitter-2-db/img/twitter-oauth.png)
-*Figure 3. Twitter OAuth Authorization*
+![Select Google Account](img/5_connect.png)
+*Figure 3. Google OAuth Authorization*
 
-![Name Connection](../twitter-2-db/img/name-connection.png)
-*Figure 4. Name the Connection*
+![Name Connection](img/6_save.png)
+*Figure 4. Name and Save the Connection*
 
-![New Twitter Connection](../twitter-2-db/img/connections.png)
-*Figure 5. Notice the new Shiny Twitter Connection*
-
-Secondly you will need to do the same exact thing for the GMail Connector to create a GMail Connection.
 
 ## Setting up the Integration
 
