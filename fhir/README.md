@@ -12,6 +12,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![FHIR Quickstart](https://img.youtube.com/vi/8nw-L0u4HzM/0.jpg)](https://youtu.be/8nw-L0u4HzM)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
