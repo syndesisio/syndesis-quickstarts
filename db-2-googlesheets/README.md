@@ -9,7 +9,7 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![GoogleSheets Quickstart](https://img.youtube.com/vi/DN5dfDP7Tkw/0.jpg)](https://youtu.be/DN5dfDP7Tkw)
 
-*Click to Play*
+*<<Click to Play>>*
 
 
 ## Getting Started
