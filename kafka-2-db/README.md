@@ -11,6 +11,8 @@ Link to a screencast of this quickstart on our youtube channel:
 
 [![Kafka Topic Quickstart](https://img.youtube.com/vi/TtVUNC51Ldk/0.jpg)](https://youtu.be/TtVUNC51Ldk)
 
+*`<<Click to Play>>`*
+
 
 ## Getting Started
 
