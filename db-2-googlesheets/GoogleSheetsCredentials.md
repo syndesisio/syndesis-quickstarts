@@ -17,5 +17,5 @@ and also make sure to set the callback url which you can obtain from the top of 
 ![CallBack URL](img/2_callback.png)
 *Figure 3. Set the Callback URL*
 
-You can now use the clientId and secret on this page for the Syndesis Settings for GoogleSheets. And finally you can create a GoogleSheets Connection and these credentials will be used.
+You can now use the clientId and secret on this page for the Syndesis Settings for GoogleSheets shown in Figure 1. And finally you can create a GoogleSheets Connection and these credentials will be used.
 
