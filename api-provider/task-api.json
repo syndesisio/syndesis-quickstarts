@@ -1,27 +1,138 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "TaskAPI",
-    "description": "Simple API for task management",
-    "version": "1.0.0"
+    "title": "Todo App API",
+    "description": "Example Todo Application API",
+    "version": "1.0.0",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
   },
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
+  "host": "<?php echo $_SERVER['HTTP_HOST'] ?>",
+  "basePath": "/api",
+  "schemes": [
+    "http",
+    "https"
   ],
   "paths": {
-    "/todo": {
+    "/": {
+      "get": {
+        "tags": [
+          "tasks",
+          "fetching"
+        ],
+        "summary": "List all tasks",
+        "description": "Fetches all tasks from the database",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "All is good",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Task"
+              }
+            }
+          }
+        }
+      },
       "post": {
-        "summary": "Create Task",
-        "description": "Create a new task in the system",
-        "operationId": "2",
+        "tags": [
+          "tasks",
+          "creating"
+        ],
+        "summary": "Create new task",
+        "description": "Stores new task in the database",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
         "parameters": [
           {
-            "name": "body",
             "in": "body",
-            "description": "A new task in JSON format",
+            "name": "body",
+            "description": "Task to create",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "All is good",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          }
+        }
+      }
+    },
+    "/{id}": {
+      "get": {
+        "tags": [
+          "tasks",
+          "fetching"
+        ],
+        "summary": "Fetch task",
+        "description": "Fetches task by given identifier",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "integer",
+            "format": "int64",
+            "description": "Task identifier",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All is good",
+            "schema": {
+              "$ref": "#/definitions/Task"
+            }
+          },
+          "404": {
+            "description": "No task with provided identifier found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "tasks",
+          "updating"
+        ],
+        "summary": "Update task",
+        "description": "Updates task by given identifier",
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "integer",
+            "format": "int64",
+            "description": "Task identifier",
+            "required": true
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Task with updates",
+            "required": true,
             "schema": {
               "$ref": "#/definitions/Task"
             }
@@ -29,85 +140,66 @@
         ],
         "responses": {
           "200": {
-            "description": "The newly created task",
+            "description": "All is good",
             "schema": {
-              "$ref": "#/definitions/Todo"
-            }
-          }
-        }
-      }
-    },
-    "/todo/{id}": {
-      "get": {
-        "summary": "Get Task by ID",
-        "operationId": "3",
-        "responses": {
-          "200": {
-            "description": "Task for given ID",
-            "schema": {
-              "$ref": "#/definitions/Todo"
+              "$ref": "#/definitions/Task"
             }
           }
         }
       },
       "delete": {
-        "summary": "Delete Task for ID",
-        "operationId": "4",
+        "tags": [
+          "tasks",
+          "destruction"
+        ],
+        "summary": "Delete task",
+        "description": "Deletes task by given identifier",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "type": "integer",
+            "format": "int64",
+            "description": "Task identifier to delete",
+            "required": true
+          }
+        ],
         "responses": {
-          "200": {
-            "description": "Status Msg",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "400": {
-            "description": "Error Msg",
-            "schema": {
-              "type": "string"
-            }
+          "204": {
+            "description": "Task deleted"
           }
         }
-      },
-      "parameters": [
-        {
-          "name": "id",
-          "in": "path",
-          "description": "The unique identifier of the task",
-          "required": true,
-          "type": "integer"
-        }
-      ]
+      }
+    }
+  },
+  "securityDefinitions": {
+    "username_password": {
+      "type": "basic"
     }
   },
   "definitions": {
-    "Todo": {
-      "title": "Root Type for Todo",
-      "description": "The root of the Todo type's schema.",
+    "Task": {
       "type": "object",
       "properties": {
         "id": {
-          "format": "int32",
-          "type": "integer"
+          "type": "integer",
+          "format": "int64",
+          "title": "Task ID",
+          "description": "Unique task identifier"
         },
         "task": {
-          "type": "string"
+          "type": "string",
+          "title": "The task",
+          "description": "Task line"
         },
         "completed": {
-          "type": "boolean"
+          "type": "integer",
+          "title": "Task completition status",
+          "description": "0 - ongoing, 1 - completed",
+          "minimum": 0,
+          "maximum": 1
         }
-      },
-      "example": "{\n    \"id\": 1,\n    \"task\": \"my task\",\n    \"completed\": false\n}"
-    },
-    "Task": {
-      "title": "Root Type for Task",
-      "description": "The root of the Task type's schema.",
-      "type": "object",
-      "properties": {
-        "task": {
-          "type": "string"
-        }
-      },
-      "example": "{\n    \"task\": \"my task\"\n}"
+      }
     }
   }
 }
