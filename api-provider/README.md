@@ -35,7 +35,8 @@ Make sure to use the externalURL for your integration. Now we are ready to play 
 ### 1. Create Task
 
 ```
-curl -k --header "Content-Type: application/json" --request POST --data '{ "task":"my new task!"}' $externalURL/todo
+curl -k --header "Content-Type: application/json" --request POST \
+        --data '{ "task":"my new task!"}' $externalURL/todo
 
 {"id":1,"task":"my new task!","completed":false}
 ```
