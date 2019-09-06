@@ -20,10 +20,10 @@ You can start by using the API Provider connector and selecting the task-api.jso
 | Flow               | Path             | SQL |
 |--------------------|------------------|-----|
 | Create Task        | POST /api        | INSERT INTO TODO  VALUES (:#id, :#task, :#completed) |
-| Get all Tasks      | GET /api         | SELECT * FROM TODO) |
-| Get Task by ID     | GET /api/{id}    | SELECT * FROM TODO WHERE ID=:#id) |
-| Update Task by ID  | PUT /api/{id}    | UPDATE TODO SET completed=:#completed where ID=:#id) |
-| Delete Task for ID | DELETE /api/{id} | DELETE FROM TODO WHERE ID=:#id) |
+| Get all Tasks      | GET /api         | SELECT * FROM TODO |
+| Get Task by ID     | GET /api/{id}    | SELECT * FROM TODO WHERE ID=:#id |
+| Update Task by ID  | PUT /api/{id}    | UPDATE TODO SET completed=:#completed where ID=:#id |
+| Delete Task for ID | DELETE /api/{id} | DELETE FROM TODO WHERE ID=:#id |
   
 We've implemented each flow using just one connection: the SampleDB Connection. We could have used any other connection this is nice and simple, so it does the job demonstrating what the API Provider is all about. Besides the SampleDB we use the DataMapper and don't forget to click on the final `Provided API Return Path` step to map Error to HTTP Return codes (which are defined in the Swagger API).
 
