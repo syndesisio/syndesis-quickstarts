@@ -19,8 +19,8 @@ You can start by using the API Provider connector and selecting the task-api.jso
 
 | Flow               | Path             | SQL |
 |--------------------|------------------|-----|
-| Create Task        | POST /api        | INSERT INTO TODO  VALUES (:#id, :#task, :#completed) |
 | Get all Tasks      | GET /api         | SELECT * FROM TODO |
+| Create Task        | POST /api        | INSERT INTO TODO  VALUES (:#id, :#task, :#completed) |
 | Get Task by ID     | GET /api/{id}    | SELECT * FROM TODO WHERE ID=:#id |
 | Update Task by ID  | PUT /api/{id}    | UPDATE TODO SET completed=:#completed where ID=:#id |
 | Delete Task for ID | DELETE /api/{id} | DELETE FROM TODO WHERE ID=:#id |
