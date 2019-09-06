@@ -15,16 +15,17 @@ Link to a screencast of this quickstart on our youtube channel:
 
 ## Getting Started
 
-You can start by using the API Provider connector and selecting the task-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip](TaskAPI-export.zip?raw=true) file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains three flows:
+You can start by using the API Provider connector and selecting the task-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip](TaskAPI-export.zip?raw=true) file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains five flows:
 
-  1. Create Task          POST /todo
-  2. Get Task by ID.      GET /todo/{id}
-  3. Delete Task for ID   DELETE /todo/{id}
-  
+  1. Create Task          POST /api          (SQL: INSERT INTO TODO  VALUES (:#id, :#task, :#completed)
+  2. Get all Tasks        GET /api           (SQL: SELECT * FROM TODO)
+  3. Get Task by ID       GET /api/{id}      (SQL: SELECT * FROM TODO WHERE ID=:#id)
+  4. Update Task by ID    PUT /api/{id}      (SQL: UPDATE TODO SET completed=:#completed where ID=:#id)
+  5. Delete Task for ID   DELETE /api/{id}   (SQL: DELETE FROM TODO WHERE ID=:#id)
   
 Navigate back to the Integration Detail screen and click to `Start` (or `Deploy`) this integration. The deploy process will take a few minutes, but at the tail end of it it will show the URL at which it is live, the `external URL` which should be something like 
 
-https://i-task-management-integration-myproject.192.168.42.72.nip.io
+https://i-task-management-integration-myproject.192.168.42.72.nip.io/api
 
 That's it, your integration is now live! Let's create an environmental parameter with the external URL using
 
@@ -32,16 +33,21 @@ export externalURL="https://i-task-management-integration-myproject.192.168.42.7
 
 Make sure to use the externalURL for your integration. Now we are ready to play with the Task API:
 
-### 1. Create Task "/"
+### 1. Create Task "/" 
 
 ```
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{ "task":"my new task!"}' $externalURL
+        --data '{"id":1, "task":"my first task :)!"}' $externalURL
+        
+curl -k --header "Content-Type: application/json" --request POST \
+        --data '{"id":2, "task":"my second task :|"}' $externalURL
+        
+curl -k --header "Content-Type: application/json" --request POST \
+        --data '{"id":3, "task":"my third task :("}' $externalURL
 
-{"id":1,"task":"my new task!","completed":false}
 ```
 
-### 2. Get Task "/"
+### 2. Get Task "/" 
 
 ```
 curl -k $externalURL
@@ -49,7 +55,7 @@ curl -k $externalURL
 {"id":1,"task":"my new task!","completed":false}
 ```
 
-### 3. Get Task by ID "/<id>"
+### 3. Get Task by ID "/{id}"
 
 ```
 curl -k $externalURL/1 
@@ -57,7 +63,7 @@ curl -k $externalURL/1
 {"id":1,"task":"my new task!","completed":false}
 ```
  
-### 4. Update Task by ID "/<id>"
+### 4. Update Task by ID "/{id}" 
 
 ```
 curl -k $externalURL/1 
@@ -65,7 +71,7 @@ curl -k $externalURL/1
 {"completed":true}
 ```
 
-### 3. Delete Task for ID "/<id>"
+### 5. Delete Task for ID "/{id>}" 
 
 ```
 curl -k -X DELETE $externalURL/1
@@ -73,7 +79,7 @@ curl -k -X DELETE $externalURL/1
 
 ## Extra Credit
 
-You can check what's going on using the Todo app using (with updated IP address)
+You can check what's going on using the Todo app using (with updated IP address), to find the route use `oc get routes | grep todo` and pick the one that looks like like
 
 https://todo-syndesis.192.168.42.72.nip.io/
 
