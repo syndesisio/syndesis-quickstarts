@@ -17,11 +17,11 @@ Link to a screencast of this quickstart on our youtube channel:
 
 You can start by using the API Provider connector and selecting the task-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip](TaskAPI-export.zip?raw=true) file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains five flows:
 
-  1. Create Task          POST /api          (SQL: INSERT INTO TODO  VALUES (:#id, :#task, :#completed)
-  2. Get all Tasks        GET /api           (SQL: SELECT * FROM TODO)
-  3. Get Task by ID       GET /api/{id}      (SQL: SELECT * FROM TODO WHERE ID=:#id)
-  4. Update Task by ID    PUT /api/{id}      (SQL: UPDATE TODO SET completed=:#completed where ID=:#id)
-  5. Delete Task for ID   DELETE /api/{id}   (SQL: DELETE FROM TODO WHERE ID=:#id)
+  | Create Task        | POST /api        | (SQL: INSERT INTO TODO  VALUES (:#id, :#task, :#completed) |
+  | Get all Tasks      | GET /api         | (SQL: SELECT * FROM TODO) |
+  | Get Task by ID     | GET /api/{id}    | (SQL: SELECT * FROM TODO WHERE ID=:#id) |
+  | Update Task by ID  | PUT /api/{id}    | (SQL: UPDATE TODO SET completed=:#completed where ID=:#id) |
+  | Delete Task for ID | DELETE /api/{id} | (SQL: DELETE FROM TODO WHERE ID=:#id) |
   
 Navigate back to the Integration Detail screen and click to `Start` (or `Deploy`) this integration. The deploy process will take a few minutes, but at the tail end of it it will show the URL at which it is live, the `external URL` which should be something like 
 
