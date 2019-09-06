@@ -28,32 +28,47 @@ https://i-task-management-integration-myproject.192.168.42.72.nip.io
 
 That's it, your integration is now live! Let's create an environmental parameter with the external URL using
 
-export externalURL="https://i-task-management-integration-myproject.192.168.42.72.nip.io"
+export externalURL="https://i-task-management-integration-myproject.192.168.42.72.nip.io/api"
 
 Make sure to use the externalURL for your integration. Now we are ready to play with the Task API:
 
-### 1. Create Task
+### 1. Create Task "/"
 
 ```
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{ "task":"my new task!"}' $externalURL/todo
+        --data '{ "task":"my new task!"}' $externalURL
 
 {"id":1,"task":"my new task!","completed":false}
 ```
 
-
-### 2. Get Task by ID
+### 2. Get Task "/"
 
 ```
-curl -k $externalURL/todo/1 
+curl -k $externalURL
 
 {"id":1,"task":"my new task!","completed":false}
 ```
-  
-### 3. Delete Task for ID
+
+### 3. Get Task by ID "/<id>"
 
 ```
-curl -k -X DELETE $externalURL/todo/1
+curl -k $externalURL/1 
+
+{"id":1,"task":"my new task!","completed":false}
+```
+ 
+### 4. Update Task by ID "/<id>"
+
+```
+curl -k $externalURL/1 
+
+{"completed":true}
+```
+
+### 3. Delete Task for ID "/<id>"
+
+```
+curl -k -X DELETE $externalURL/1
 ```
 
 ## Extra Credit
