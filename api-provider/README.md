@@ -28,7 +28,15 @@ You can start by using the API Provider connector and selecting the task-api.jso
 ![Paths in the Task API](img/import.png)
 *Figure 1. Paths in the Task API*
 
-We've implemented each flow using just one connection: the SampleDB Connection. We could have used any other connection this is nice and simple, so it does the job demonstrating what the API Provider is all about. Besides the SampleDB we use the DataMapper and don't forget to click on the final `Provided API Return Path` step to map Error to HTTP Return codes (which are defined in the Swagger API).
+We've implemented each flow using just one connection: the SampleDB Connection. We could have used any other connection this is nice and simple, so it does the job demonstrating what the API Provider is all about.
+
+![Flow Implementation](img/flow-implementation.png.png)
+*Figure 2. Flow Implementation*
+
+Besides the SampleDB we use the DataMapper and don't forget to click on the final `Provided API Return Path` step to map Error to HTTP Return codes (which are defined in the Swagger API).
+
+![Return Error Mapping](img/error-mapping.png)
+*Figure 3. Return Error Mapping*
 
 Navigate back to the Integration Detail screen and click to `Start` (or `Deploy`) this integration. The deploy process will take a few minutes, but at the tail end of it it will show the URL at which it is live, the `external URL` which should be something like 
 
