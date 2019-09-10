@@ -30,7 +30,7 @@ You can start by using the API Provider connector and selecting the task-api.jso
 
 We've implemented each flow using just one connection: the SampleDB Connection. We could have used any other connection this is nice and simple, so it does the job demonstrating what the API Provider is all about.
 
-![Flow Implementation](img/flow-implementation.png.png)
+![Flow Implementation](img/flow-implementation.png)
 *Figure 2. Flow Implementation*
 
 Besides the SampleDB we use the DataMapper and don't forget to click on the final `Provided API Return Path` step to map Error to HTTP Return codes (which are defined in the Swagger API).
