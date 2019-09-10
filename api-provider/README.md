@@ -106,3 +106,8 @@ oc rsh syndesis-db-1-c84cz
 sh-4.2$ psql -Usampledb
 sampledb=> select * from todo;
 ```
+
+## What did we learn?
+* We learned to generate a REST service from a OpenAPI/Swagger document
+* We learned to implement each flow using Syndesis Connectors and Steps
+* We learned to map Exceptions to Http return codes
