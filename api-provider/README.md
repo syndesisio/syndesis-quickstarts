@@ -25,6 +25,9 @@ You can start by using the API Provider connector and selecting the task-api.jso
 | Update Task by ID  | PUT /api/{id}    | UPDATE TODO SET completed=:#completed where ID=:#id |
 | Delete Task for ID | DELETE /api/{id} | DELETE FROM TODO WHERE ID=:#id |
   
+![Paths in the Task API](img/import.png)
+*Figure 1. Paths in the Task API*
+
 We've implemented each flow using just one connection: the SampleDB Connection. We could have used any other connection this is nice and simple, so it does the job demonstrating what the API Provider is all about. Besides the SampleDB we use the DataMapper and don't forget to click on the final `Provided API Return Path` step to map Error to HTTP Return codes (which are defined in the Swagger API).
 
 Navigate back to the Integration Detail screen and click to `Start` (or `Deploy`) this integration. The deploy process will take a few minutes, but at the tail end of it it will show the URL at which it is live, the `external URL` which should be something like 
