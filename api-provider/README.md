@@ -8,7 +8,7 @@ In this scenario we start with a OpenAPI/Swagger file [task-api.json](task-api.j
 
 Link to a screencast of this quickstart on our youtube channel:
 
-[![API Provider Quickstart](https://img.youtube.com/vi/RAa1qy3WnWQ/0.jpg)](https://youtu.be/RAa1qy3WnWQ)
+[![API Provider Quickstart](https://img.youtube.com/vi/sox8SSqJ0zQ/0.jpg)](https://youtu.be/sox8SSqJ0zQ)
 
 *`<<Click to Play>>`*
 
