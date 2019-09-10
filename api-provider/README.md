@@ -108,6 +108,6 @@ sampledb=> select * from todo;
 ```
 
 ## What did we learn?
-* We learned to generate a REST service from a OpenAPI/Swagger document
+* We learned to generate a Rest service from a OpenAPI/Swagger document
 * We learned to implement each flow using Syndesis Connectors and Steps
-* We learned to map Exceptions to Http return codes
+* We learned to map Exceptions to HTTP return codes
