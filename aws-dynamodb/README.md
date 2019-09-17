@@ -1,7 +1,10 @@
 # DynamoDB Provider
 
 ## Introduction
+
 In this scenario we will connect to an already existing DynamoDB (DDB) table. We will demonstrate how to read and write elements from the table.
+
+There is an [export of this integration](assets/QuickStartSyndesis-export.zip) that can be imported. Remember to modify the credentials to use it.
 
 ## Requirements
 
