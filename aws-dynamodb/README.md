@@ -4,6 +4,10 @@
 
 In this scenario we will connect to an already existing DynamoDB (DDB) table. We will demonstrate how to read and write elements from the table.
 
+You can find a screencast of this quickstart on youtube:
+
+[![DynamoDB Quickstart](https://i.ytimg.com/vi/fhi3ZKvTP9g/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDaaOtR6W8SAMaFvoz1_Tk4SU5uZg)](https://youtu.be/fhi3ZKvTP9g)
+
 There is an [export of this integration](assets/QuickStartSyndesis-export.zip) that can be imported. Remember to modify the credentials to use it.
 
 ## Requirements
