@@ -116,6 +116,15 @@ sampledb=> select * from todo;
 ## Some more background Exceptions and HTTP Status Codes
 [HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) can be returned by an HTTP based Service. In an OpenAPI status codes are captured as part of the contract with this service. At a minimum a 200 OK needs to be defined, but usually in addition to a 200, a number of codes in the 4xx range (user errors) and 5xx (server errors) are defined. 
 
-The API Provider lets the user map Exceptions that can occur in the integration flow to HTTP Status codes in the UI that is presented when clicking on the `Return` Step.
+The API Provider lets the user map Exceptions that can occur in the integration flow to HTTP Status codes in the UI that is presented when clicking on the configure button of the `Provided API Return Path` Step. The UI is shown in Figure 3 above.
 
-Each connector can define certain `Standardized Errors`. These Errors are based on Exceptions that can occur while using the connector. For example the Database Connector defines the following 
+* `Response Code` dropdown - The HTTP Status Code returned in the Header the integratio flow completed successfully,
+* `Include error message in the return body` checkbox - check if an error body should be returned. A nice message maybe great during development, but could leak information you may not want to show in production. The message is a JSON formatted string containing elements `responseCode, category and message`. For example
+...
+{
+  responseCode: 404,
+  category:  "SQL_ENTITY_NOT_FOUND_ERROR",
+  message: "SQL SELECT did not SELECT any records"
+}
+...
+* `Error Response Codes` - The user defined mapping of error to HTTP status code. For each error in the left column the user can defined a HTTP Status code. Each connector can define certain `Standardized Errors`. The left column shows a combined list of all the errors of the connectors used in this particular flow. At a minimum you will see a `Server Error` which is the default if an exception did not match one the Error Categories defined by the Connector Developer.  
