@@ -111,3 +111,11 @@ sampledb=> select * from todo;
 * We learned to generate a Rest service from a OpenAPI/Swagger document
 * We learned to implement each flow using Syndesis Connectors and Steps
 * We learned to map Exceptions to HTTP return codes
+
+
+## Some more background Exceptions and HTTP Status Codes
+[HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) can be returned by an HTTP based Service. In an OpenAPI status codes are captured as part of the contract with this service. At a minimum a 200 OK needs to be defined, but usually in addition to a 200, a number of codes in the 4xx range (user errors) and 5xx (server errors) are defined. 
+
+The API Provider lets the user map Exceptions that can occur in the integration flow to HTTP Status codes in the UI that is presented when clicking on the `Return` Step.
+
+Each connector can define certain `Standardized Errors`. These Errors are based on Exceptions that can occur while using the connector. For example the Database Connector defines the following 
