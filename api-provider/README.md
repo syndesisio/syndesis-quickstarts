@@ -120,11 +120,11 @@ The API Provider lets the user map Exceptions that can occur in the integration 
 
 * `Response Code` dropdown - The HTTP Status Code returned in the Header the integratio flow completed successfully,
 * `Include error message in the return body` checkbox - check if an error body should be returned. A nice message maybe great during development, but could leak information you may not want to show in production. The message is a JSON formatted string containing elements `responseCode, category and message`. For example
-...
-{
-  responseCode: 404,
-  category:  "SQL_ENTITY_NOT_FOUND_ERROR",
-  message: "SQL SELECT did not SELECT any records"
-}
-...
+
+    {
+      responseCode: 404,
+      category:  "SQL_ENTITY_NOT_FOUND_ERROR",
+      message: "SQL SELECT did not SELECT any records"
+    }
+
 * `Error Response Codes` - The user defined mapping of error to HTTP status code. For each error in the left column the user can defined a HTTP Status code. Each connector can define certain `Standardized Errors`. The left column shows a combined list of all the errors of the connectors used in this particular flow. At a minimum you will see a `Server Error` which is the default if an exception did not match one the Error Categories defined by the Connector Developer.  
