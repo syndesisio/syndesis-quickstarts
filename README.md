@@ -38,7 +38,7 @@ We will now download the docker images from our official dockerhub repository an
 ```
 bash <(curl -sL https://syndes.is/start)
 ```
-This will take a few minutes depending on your download speed, but this is all there is to it. At the end of the installation it will open your default browser to the syndesis address. By default you can log in using any username/pw combination. For more details see [syndesis.io](https://syndesis.io/quickstart/). 
+Note that window you will need something like [cygwin](https://www.cygwin.com) or [KornShell](http://www.kornshell.com) for this to work. The installation process itself can take a few minutes depending on your download speed, but this is all there is to it. At the end of the installation it will open your default browser to the syndesis address. By default you can log in using any username/pw combination. For more details see [syndesis.io](https://syndesis.io/quickstart/). 
 
 ## 4. Let's run some QuickStarts
 
