@@ -14,13 +14,19 @@ However if you’re like me and you want to be able try things out by running it
   * [Run some QuickStarts](README.md#4-lets-run-some-quickstarts)
 
 ## 2. Install a local mini cloud called MiniShift
-In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of [OpenShift OKD](https://docs.okd.io/latest/welcome/index.html) running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox. To use **xHyve** on **OSX** using [homebrew](https://brew.sh)
+In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of [OpenShift OKD](https://docs.okd.io/latest/welcome/index.html) running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox and can be installed on different operating systems:
+
+[Linux](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-linux)
+[Windows](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-windows)
+[MacOS](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-macos)
+
+If you are on MacOS and you want to use xHyve, and are ok with [homebrew](https://brew.sh) then you can follow the following instructions
 ```
 brew install docker-machine-driver-xhyve
 sudo chown root:wheel $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 sudo chmod u+s $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
-For more details on the commands above, use a different virtualization technology, or if you’re not using OSX see [Setting Up the Virtualization Environment](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html). To install [minishift](https://www.okd.io/minishift/) itself use
+To install [minishift](https://www.okd.io/minishift/) itself use
 ```
 brew cask install minishift
 ```
