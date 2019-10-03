@@ -1,6 +1,6 @@
 # Syndesis Quickstarts
 
-<img align="left" width="144" height="86" src="img//syndesis.png">Syndesis makes Camel super easy to use. It packages Camel components as `Connectors` with a described dataInput and dataOutput shape. This is makes building an integration as easy as using clicking Duplos together.  
+<img align="left" width="144" height="86" src="img//syndesis.png">Syndesis makes Camel super easy to use. It packages Camel components as `Connectors` with a described dataInput and dataOutput shape. This is makes building an integration as easy as using clicking Duplos together. Each of our QuickStarts have a little video to see help you build your own integration, plus there is an export file you can use to import to load up the entire scenario. Note that you might have to update things like credentials. Have fun playing!
 
 ## 1. Introduction to Syndesis
 
