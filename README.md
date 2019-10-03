@@ -17,9 +17,9 @@ However if you’re like me and you want to be able try things out by running it
 ## 2. Install a local mini cloud called MiniShift
 In order to have a small cloud running on your laptop you need to install MiniShift. MiniShift is a one node version installation of [OpenShift OKD](https://docs.okd.io/latest/welcome/index.html) running in a virtual machine. MiniShift supports a few virtualization technogies such as KVM, xHyve, Hyper-V and VirtualBox and can be installed on different operating systems:
 
-[Linux](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-linux)
-[Windows](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-windows)
-[MacOS](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-macos)
+  * [Linux](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-linux)
+  * [Windows](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-windows)
+  * [MacOS](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-macos)
 
 If you are on MacOS and you want to use xHyve, and are ok with [homebrew](https://brew.sh) then you can follow the following instructions
 ```
