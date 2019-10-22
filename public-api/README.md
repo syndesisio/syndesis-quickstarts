@@ -11,7 +11,7 @@ This quickstart includes a couple of simple integrations and a Jenkins pipeline 
 
 Link to a screencast of this quickstart on Vimeo:
 
-[![Public API Quickstart](https://i.vimeocdn.com/video/824440438_640.webp)](https://vimeo.com/367913566)
+[![Public API Quickstart](https://player.vimeo.com/video/367913566)](https://vimeo.com/367913566)
 
 *`<<Click to Play>>`*
 
