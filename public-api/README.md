@@ -11,7 +11,7 @@ This quickstart includes a couple of simple integrations and a Jenkins pipeline 
 
 Link to a screencast of this quickstart on Vimeo:
 
-[![Public API Quickstart](http://i.vimeocdn.com/video/787404345_640.jpg)](https://vimeo.com/339390306)
+[![Public API Quickstart](https://i.vimeocdn.com/video/824440438_640.webp)](https://vimeo.com/367913566)
 
 *`<<Click to Play>>`*
 
@@ -20,7 +20,7 @@ Link to a screencast of this quickstart on Vimeo:
 
 Create a couple of simple integrations, or import the file [sample-export.zip](sample-export.zip?raw=true). 
 
-Follow the instructions at [Public API Endpoint](https://github.com/syndesisio/syndesis/tree/master/install#create-template-for-public-api-endpoint) and install the public OAuth proxy to enable the public API. You will also need to create a service account to access the API using it's secret token. The following commands can be used to create an account called syndesis-cd-client:
+Follow the instructions at [Public API Endpoint](https://github.com/syndesisio/syndesis/tree/1.8.x/install#create-template-for-public-api-endpoint) and install the public OAuth proxy to enable the public API. You will also need to create a service account to access the API using it's secret token. The following commands can be used to create an account called syndesis-cd-client:
 
 ```
 oc create serviceaccount syndesis-cd-client
@@ -34,7 +34,7 @@ Where id is the token id obtained from the `describe serviceaccount` command abo
 
 If you don't already have a Jenkins instance in your OpenShift namespace, install Jenkins by following the instructions at [Creating the Jenkins Master](https://docs.openshift.com/container-platform/3.11/dev_guide/dev_tutorials/openshift_pipeline.html#creating-the-jenkins-master).
 
-Create a new Jenkins pipeline job, with the following build parameters:
+Create a new Jenkins pipeline job, with the following String build parameters:
 
 * EXPORT_HOSTNAME       - Hostname of source install, should be the hostname used to install the public API proxy.
 * IMPORT_HOSTNAME       - Hostname of target install, which for this demo can be the same as source hostname.
