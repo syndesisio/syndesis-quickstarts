@@ -21,22 +21,24 @@ In order to have a small cloud running on your laptop you need to install MiniSh
   * [Windows](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-windows)
   * [MacOS](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#for-macos)
 
-If you are on MacOS and you want to use xHyve, and are ok with [homebrew](https://brew.sh) then you can follow the following instructions
+If you are on MacOS and you want to use Hyperkit, and are ok with [homebrew](https://brew.sh) then you can follow the following instructions
 ```
-brew install docker-machine-driver-xhyve
-sudo chown root:wheel $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-sudo chmod u+s $(brew — prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+brew install hyperkit
+brew install docker-machine-driver-hyperkit
+sudo chown root:wheel /usr/local/bin/docker-machine-driver-hyperkit
+sudo chmod u+s /usr/local/bin/docker-machine-driver-hyperkit
 ```
 To install [minishift](https://www.okd.io/minishift/) itself use
 ```
 brew cask install minishift
+minishift config set vm-driver hyperkit
 ```
 or simply download the minishift binary from [github](https://github.com/minishift/minishift/releases). Hop onto [IRC](https://webchat.freenode.net) (#syndesis) to chat with us if you need help with any of this!
 
 ## 3. Install Syndesis
 We will now download the docker images from our official dockerhub repository and start them on your minishift installation using
 ```
-bash <(curl -sL https://syndes.is/start)
+bash <(curl -sL https://syndes.is/start --vm-driver hyperkit)
 ```
 Note that on Windows you will need something like [Cygwin](https://www.cygwin.com) or [KornShell](http://www.kornshell.com) for this to work. The installation process itself can take a few minutes depending on your download speed, but this is all there is to it. At the end of the installation it will open your default browser to the syndesis address. By default you can log in using any username/pw combination. For more details see [syndesis.io](https://syndesis.io/quickstart/). 
 
