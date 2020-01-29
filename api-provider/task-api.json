@@ -1,19 +1,14 @@
 {
-    "swagger": "2.0",
+    "openapi": "3.0.2",
     "info": {
         "title": "Todo App API",
+        "version": "1.0.0",
         "description": "Example Todo Application API",
         "license": {
             "name": "Apache 2.0",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
-        },
-        "version": "1.0.0"
+            "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
     },
-    "basePath": "/api",
-    "schemes": [
-        "http",
-        "https"
-    ],
     "paths": {
         "/": {
             "get": {
@@ -21,63 +16,62 @@
                     "tasks",
                     "fetching"
                 ],
-                "summary": "List all tasks",
-                "description": "Fetches all tasks from the database",
-                "operationId": "ff6234ed-a159-4d44-ad14-22e0a3cd7c7a",
-                "produces": [
-                    "application/json"
-                ],
                 "responses": {
                     "200": {
-                        "description": "All is good",
-                        "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/Task"
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Task"
+                                    }
+                                }
                             }
-                        }
+                        },
+                        "description": "All is good"
                     },
                     "500": {
                         "description": "Server Error"
                     }
-                }
+                },
+                "operationId": "fetch-all-tasks",
+                "summary": "List all tasks",
+                "description": "Fetches all tasks from the database"
             },
             "post": {
+                "requestBody": {
+                    "description": "Task to create",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Task"
+                            }
+                        }
+                    },
+                    "required": true
+                },
                 "tags": [
                     "tasks",
                     "creating"
                 ],
-                "summary": "Create new task",
-                "description": "Stores new task in the database",
-                "operationId": "753cd3a5-8854-4eef-8594-c01e5afd36e0",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
-                "parameters": [
-                    {
-                        "name": "body",
-                        "in": "body",
-                        "description": "Task to create",
-                        "required": true,
-                        "schema": {
-                            "$ref": "#/definitions/Task"
-                        }
-                    }
-                ],
                 "responses": {
                     "201": {
-                        "description": "All is good",
-                        "schema": {
-                            "$ref": "#/definitions/Task"
-                        }
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Task"
+                                }
+                            }
+                        },
+                        "description": "All is good"
                     },
                     "500": {
                         "description": "Server Error"
                     }
-                }
+                },
+                "operationId": "create-task",
+                "summary": "Create new task",
+                "description": "Stores new task in the database"
             }
         },
         "/{id}": {
@@ -86,28 +80,28 @@
                     "tasks",
                     "fetching"
                 ],
-                "summary": "Fetch task",
-                "description": "Fetches task by given identifier",
-                "operationId": "7dfe8c6b-4636-489d-9990-57d6d5ce61d9",
-                "produces": [
-                    "application/json"
-                ],
                 "parameters": [
                     {
                         "name": "id",
-                        "in": "path",
                         "description": "Task identifier",
-                        "required": true,
-                        "type": "integer",
-                        "format": "int64"
+                        "schema": {
+                            "format": "int64",
+                            "type": "integer"
+                        },
+                        "in": "path",
+                        "required": true
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "All is good",
-                        "schema": {
-                            "$ref": "#/definitions/Task"
-                        }
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Task"
+                                }
+                            }
+                        },
+                        "description": "All is good"
                     },
                     "404": {
                         "description": "No task with provided identifier found"
@@ -115,47 +109,48 @@
                     "500": {
                         "description": "Server Error"
                     }
-                }
+                },
+                "operationId": "fetch-task",
+                "description": "Fetches task by given identifier"
             },
             "put": {
+                "requestBody": {
+                    "description": "Task with updates",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Task"
+                            }
+                        }
+                    },
+                    "required": true
+                },
                 "tags": [
                     "tasks",
                     "updating"
                 ],
-                "summary": "Update task",
-                "description": "Updates task by given identifier",
-                "operationId": "c7099be6-e496-4442-b310-dbfd54baa308",
-                "consumes": [
-                    "application/json"
-                ],
-                "produces": [
-                    "application/json"
-                ],
                 "parameters": [
                     {
                         "name": "id",
-                        "in": "path",
                         "description": "Task identifier",
-                        "required": true,
-                        "type": "integer",
-                        "format": "int64"
-                    },
-                    {
-                        "name": "body",
-                        "in": "body",
-                        "description": "Task with updates",
-                        "required": true,
                         "schema": {
-                            "$ref": "#/definitions/Task"
-                        }
+                            "format": "int64",
+                            "type": "integer"
+                        },
+                        "in": "path",
+                        "required": true
                     }
                 ],
                 "responses": {
                     "200": {
-                        "description": "All is good",
-                        "schema": {
-                            "$ref": "#/definitions/Task"
-                        }
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Task"
+                                }
+                            }
+                        },
+                        "description": "All is good"
                     },
                     "404": {
                         "description": "No Record with this ID"
@@ -163,24 +158,26 @@
                     "500": {
                         "description": "Server Error"
                     }
-                }
+                },
+                "operationId": "update-task",
+                "summary": "Update task",
+                "description": "Updates task by given identifier"
             },
             "delete": {
                 "tags": [
                     "tasks",
                     "destruction"
                 ],
-                "summary": "Delete task",
-                "description": "Deletes task by given identifier",
-                "operationId": "204baf17-7d45-450e-b811-7a44695d570f",
                 "parameters": [
                     {
                         "name": "id",
-                        "in": "path",
                         "description": "Task identifier to delete",
-                        "required": true,
-                        "type": "integer",
-                        "format": "int64"
+                        "schema": {
+                            "format": "int64",
+                            "type": "integer"
+                        },
+                        "in": "path",
+                        "required": true
                     }
                 ],
                 "responses": {
@@ -193,38 +190,49 @@
                     "500": {
                         "description": "Server Error"
                     }
-                }
+                },
+                "operationId": "delete-task",
+                "summary": "Delete task",
+                "description": "Deletes task by given identifier"
             }
         }
     },
-    "definitions": {
-        "Task": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "format": "int64",
-                    "title": "Task ID",
-                    "description": "Unique task identifier",
-                    "type": "integer"
-                },
-                "task": {
-                    "title": "The task",
-                    "description": "Task line",
-                    "type": "string"
-                },
-                "completed": {
-                    "title": "Task completition status",
-                    "description": "0 - ongoing, 1 - completed",
-                    "maximum": 1,
-                    "minimum": 0,
-                    "type": "integer"
+    "components": {
+        "schemas": {
+            "Task": {
+                "description": "",
+                "required": [
+                    "id",
+                    "task"
+                ],
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "format": "int64",
+                        "title": "Task ID",
+                        "description": "Unique task identifier",
+                        "type": "integer"
+                    },
+                    "task": {
+                        "title": "The task",
+                        "description": "Task line",
+                        "type": "string"
+                    },
+                    "completed": {
+                        "title": "Task completition status",
+                        "description": "0 - ongoing, 1 - completed",
+                        "maximum": 1,
+                        "minimum": 0,
+                        "type": "integer"
+                    }
                 }
             }
-        }
-    },
-    "securityDefinitions": {
-        "username_password": {
-            "type": "basic"
+        },
+        "securitySchemes": {
+            "username_password": {
+                "scheme": "basic",
+                "type": "http"
+            }
         }
     }
 }
