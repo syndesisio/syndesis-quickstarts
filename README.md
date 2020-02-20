@@ -51,6 +51,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [DB 2 DB](db-2-db) - read from a database table, insert in another database table
   * [FHIR 2 FHIR](fhir) - breath 'fire' from a FHIR REST service and update the same record
   * [DB 2 API Connector](db-2-api-connector) - create a Custom RESTful Connector to the Todo REST API
+  * [DynamoDB](aws-dynamodb) - connect to an AWS DynamoDB database
   * [Twitter 2 DB](twitter-2-db) - search twitter and push matches to a database
   * [Twitter 2 GMail](twitter-2-gmail) - search twitter and send out matches in the body of an email
   * [Kafka 2 DB](kafka-2-db) - setup a Kafka Broker, then listen to a Kafka Topic and write to a database
@@ -69,6 +70,9 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [GMail](twitter-2-gmail/GmailCredentials.md)
   * [GoogleSheets API](db-2-googlesheets/GoogleSheetsCredentials.md)
   * [Jira](jira-2-twitter/JiraConnection.md)
+  
+### 4.4 Advanced Configuration
+  * [Kafka Autodiscovery](kafka-autodiscovery) - How to configure your environment to auto discover kafka brokers
   
   
 ## 5. Interesting 3rd Party Projects/Use Cases using Syndesis
