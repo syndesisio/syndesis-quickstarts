@@ -1,11 +1,11 @@
 # MongoDB connector
 
 ## Introduction
-MongoDB connector allow you to use this NO SQL database in your integrations. For this quickstart scenario we'll show how to read and write data from a MongoDB collection. We'll also see how to tail a collection and be able to trigger an integration when a new document is stored in a collection.
+MongoDB connector allows you to use this NoSQL database in your integrations. For this quickstart scenario we'll show how to read and write data from a MongoDB collection. We'll also see how to tail a collection and be able to trigger an integration when a new document is stored in a collection.
 
 ## REST API backed by a MongoDB collection
 
-In the first scenario we will create a simple REST API defined by [this OpenAPI specification](sample.json). We want an endpoint to store game information, and one to read those information. A similar scenario was described in the [API Provider quickstart](https://github.com/squakez/syndesis-quickstarts/tree/master/api-provider), but backed by a SQL database instead.
+In the first scenario we will create a simple REST API defined by [this OpenAPI specification](sample.json). We want an endpoint to store game information, and one to read those information. A similar scenario was described in the [API Provider quickstart](https://github.com/squakez/syndesis-quickstarts/tree/master/api-provider), but backed by a conventional SQL database instead.
 
 Before starting with Syndesis steps, let's connect to our MongoDB instance and create the collection where we store the data.
 
