@@ -1,0 +1,25 @@
+db.createCollection("game", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         required: [ "code", "name", "genre", "year" ],
+         properties: {
+            code: {
+              bsonType: "string"
+            },
+            name: {
+               bsonType: "string"
+            },
+            year: {
+               bsonType: "string"
+            },
+            language: {
+              bsonType: "string"
+            },
+            genre: {
+              bsonType: "string"
+            }
+         }
+      }
+   }
+})
