@@ -57,11 +57,14 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [Kafka 2 DB](kafka-2-db) - setup a Kafka Broker, then listen to a Kafka Topic and write to a database
   * [Jira 2 Twitter](jira-2-twitter) - retrieve Jira comments and send them as Twitter direct messages
   * [DB 2 GoogleSheets](db-2-googlesheets) - read from a database, insert into googlesheet.
+  * [MongoDB](mongodb) - read and write to a Mongo NoSQL database. You may want to do [API Provider](api-provider) before doing this one.
+  
   
 ### 4.2 API
   * [WebHook](webhook-2-db) - create and expose a webhook to invoke an integration with some data
   * [API Provider](api-provider) - create and expose a REST interface to (remotely) interact with integration flows
   * [Syndesis API](public-api) - Syndesis has a public API you can use to integrate Syndesis with your systems
+  
   
   ![Integration Quickstarts](img/quickstarts.png)
   
