@@ -1,4 +1,4 @@
-# MongoDB connector
+# API-Provider to MongoDB
 
 ## Introduction
 MongoDB connector allows you to use this NoSQL database in your integrations. For this quickstart scenario we'll show how to read and write data from a MongoDB collection. We'll also see how to tail a collection and be able to trigger an integration when a new document is stored in a collection.
