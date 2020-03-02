@@ -60,7 +60,7 @@ oc create clusterrole kafkas.kafka.strimzi.io-view --verb=get,list --resource=ka
 * Add this cluster role to your oc user
 
 ```
-oc adm policy add-cluster-role-to-user kafkas.kafka.strimzi.io-view syndesis-server
+oc adm policy add-cluster-role-to-user kafkas.kafka.strimzi.io-view -z syndesis-server
 ```
 
 The username may be different on your usecase. For example, on minishift the user is called syndesis-default. Make sure your configuration fits your installation.
