@@ -63,6 +63,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
 ### 4.2 API
   * [WebHook](webhook-2-db) - create and expose a webhook to invoke an integration with some data
   * [API Provider](api-provider) - create and expose a REST interface to (remotely) interact with integration flows
+  * [API Provider FTP](api-provider-with-ftp) - create and expose a REST interface to interact with FTP server
   * [Syndesis API](public-api) - Syndesis has a public API you can use to integrate Syndesis with your systems
   
   
