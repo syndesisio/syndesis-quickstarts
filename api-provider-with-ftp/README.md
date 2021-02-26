@@ -26,7 +26,7 @@ mkdir res/home/inbox
 In Syndesis you can now create an FTP connection, using the FTP connector [Connections > Create Connection] and select FTP.
 As shown in Figure 1, fill out the first 4 fields: hostname or IP address of your FTP server, username (admin), password (admin) and port (2121). 
 
-![Create an FTP Connection](img/ifig1-ftp-connection.png)
+![Create an FTP Connection](img/fig1-ftp-connection.png)
 *Figure 1. Create FTP Connection*
 
 
