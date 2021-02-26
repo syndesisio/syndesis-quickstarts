@@ -8,7 +8,7 @@ In this scenario we start with an OpenAPI/Swagger file [ftp-api.json](ftp-api.js
 
 Link to a screencast of this quickstart on our youtube channel:
 
-[![API Provider Quickstart](https://img.youtube.com/vi/sox8SSqJ0zQ/0.jpg)](https://youtu.be/sox8SSqJ0zQ)
+[![API Provider Quickstart](https://img.youtube.com/vi/TeiSjBIaANQ/mq2.jpg)](https://youtu.be/TeiSjBIaANQ)
 
 *`<<Click to Play>>`*
 
@@ -89,7 +89,7 @@ curl -k $externalURL/1.json
 ### 3. Update File by Filename "/{name}" 
 
 ```
-curl -k -X PUT $externalURL/1.json --data '{"name":"1.json", "content":"my first file has more content now!"}'
+curl -k -X PUT --header "Content-Type: application/json" --data '{"name":"1.json", "content":"my first file has more content now!"}' $externalURL/1.json
 
 {"name":"1.json", "content":"my first file has more content now!"}
 ```
