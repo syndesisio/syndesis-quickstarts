@@ -3,16 +3,6 @@
 ## Introduction
 In this scenario we start with an OpenAPI/Swagger file [ftp-api.json](ftp-api.json?raw=true). We will demonstrate how to create a REST API that can invoke your integration flows. Note that at the moment the example integrations use the FTP connector only. You can add other Connections to the flows if you want to.
 
-
-## Screencast of this Quickstart
-
-Link to a screencast of this quickstart on our youtube channel:
-
-[![API Provider Quickstart](https://img.youtube.com/vi/TeiSjBIaANQ/mq2.jpg)](https://youtu.be/TeiSjBIaANQ)
-
-*`<<Click to Play>>`*
-
-
 ## Prerequisite
 For this quickstart you will need access to an FTP server. If you don't have one you can download one from the Apache [Mina](https://mina.apache.org/ftpserver-project/downloads.html) project. For this demo I used the 1.1.1 Release. After etracting it you can start it from top level directory using
 ```
@@ -28,6 +18,23 @@ As shown in Figure 1, fill out the first 4 fields: hostname or IP address of you
 
 ![Create an FTP Connection](img/fig1-ftp-connection.png)
 *Figure 1. Create FTP Connection*
+
+Link to a screencast of this quickstart on our youtube channel:
+
+[![API Provider Quickstart](https://img.youtube.com/vi/gHA6sJM8x-8/mq2.jpg)](https://youtu.be/gHA6sJM8x-8)
+
+*`<<Click to Play>>`*
+
+
+## Screencast of this Quickstart
+
+Link to a screencast of this quickstart on our youtube channel:
+
+[![API Provider Quickstart](https://img.youtube.com/vi/TeiSjBIaANQ/mq2.jpg)](https://youtu.be/TeiSjBIaANQ)
+
+*`<<Click to Play>>`*
+
+
 
 
 ## Getting Started
