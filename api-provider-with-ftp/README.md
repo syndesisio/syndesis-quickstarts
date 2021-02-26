@@ -1,7 +1,7 @@
 # API Provider with FTP
 
 ## Introduction
-In this scenario we start with an OpenAPI/Swagger file [ftp-api.json](ftp-api.json?raw=true). We will demonstrate how to create a REST API that can invoke your integration flows. Note that at the moment the example integrations use the FTP connector only. You can add other Connectors if you want to.
+In this scenario we start with an OpenAPI/Swagger file [ftp-api.json](ftp-api.json?raw=true). We will demonstrate how to create a REST API that can invoke your integration flows. Note that at the moment the example integrations use the FTP connector only. You can add other Connections if you want to.
 
 
 ## Screencast of this Quickstart
@@ -13,16 +13,33 @@ Link to a screencast of this quickstart on our youtube channel:
 *`<<Click to Play>>`*
 
 
+## Prerequisite
+For this quickstart you will need access to an FTP server. If you don't have one you can download one from the Apache [Mina](https://mina.apache.org/ftpserver-project/downloads.html) project. For this demo I used the 1.1.1 Release. After etracting it you can start it from top level directory using
+```
+./bin/ftpd.sh res/conf/ftpd-typical.xml 
+```
+This will start the server with default `user/pw` of `admin/admin`. Next create an new directory res/home/inbox
+```
+mkdir res/home/inbox
+```
+
+In Syndesis you can now create an FTP connection, using the FTP connector [Connections > Create Connection] and select FTP.
+As shown in Figure 1, fill out the first 4 fields: hostname or IP address of your FTP server, username (admin), password (admin) and port (2121). 
+
+![Create an FTP Connection](img/ifig1-ftp-connection.png)
+*Figure 1. Create FTP Connection*
+
+
 ## Getting Started
 
-You can start by using the API Provider connector and selecting the task-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip](TaskAPI-export.zip?raw=true) file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains five flows:
+You can start by using the API Provider connector and selecting the ftp-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. If you want to set up your own flows you can follow the video tutorial from above. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip](TaskAPI-export.zip?raw=true) file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains five flows:
 
-| Flow               | Path             | SQL |
+| Flow               | Path             | FTP Action (Directory: inbox)|
 |--------------------|------------------|-----|
-| Create File        | POST /api        | INSERT INTO TODO  VALUES (:#id, :#task, :#completed) |
-| Get Task by ID     | GET /api/{id}    | SELECT * FROM TODO WHERE ID=:#id |
-| Update Task by ID  | PUT /api/{id}    | UPDATE TODO SET completed=:#completed where ID=:#id |
-| Delete Task for ID | DELETE /api/{id} | DELETE FROM TODO WHERE ID=:#id |
+| Create File        | POST /api        | UploadNamedFile - If file exists: fail |
+| Get File by FileName    | GET /api/{id}    | DownloadNamedFile - Delete file after download: no |
+| Update File by FileName | PUT /api/{id}    | UploadNamedFile - If file exists: override |
+| Delete File by Filename | DELETE /api/{id} | DownloadNamedFile -  Delete file after download: yes ||
   
 ![Paths in the Task API](img/import.png)
 *Figure 1. Paths in the Task API*
