@@ -41,106 +41,66 @@ You can start by using the API Provider connector and selecting the [ftp-api.jso
 | Update File by FileName | PUT /api/{id}    | UploadNamedFile - If file exists: override |
 | Delete File by Filename | DELETE /api/{id} | DownloadNamedFile -  Delete file after download: yes ||
   
-![Paths in the Task API](img/import.png)
-*Figure 1. Paths in the Task API*
+![Endpoints in the FTP API](img/fig2-api-four-flows.png)
+*Figure 2. Endpoints in the File API*
 
 We've implemented each flow using just one connection: the SampleDB Connection. We could have used any other connection this is nice and simple, so it does the job demonstrating what the API Provider is all about.
 
-![Flow Implementation](img/flow-implementation.png)
-*Figure 2. 'Get' Flow Implementation*
+![Flow Implementation](img/fig3-get-flow.png)
+*Figure 3. 'Get' Flow Implementation*
 
 Besides the SampleDB we use the DataMapper and don't forget to click on the final `Provided API Return Path` step to map Error to HTTP Return codes (which are defined in the Swagger API).
 
-![Return Error Mapping](img/error-mapping.png)
-*Figure 3. Return Error Mapping*
+![Return Error Mapping](img/fig4-map-errors.png)
+*Figure 4. Return Error Mapping*
 
 Navigate back to the Integration Detail screen and click to `Start` (or `Deploy`) this integration. The deploy process will take a few minutes, but at the tail end of it it will show the URL at which it is live, the `external URL` which should be something like 
 
-https://i-task-management-integration-myproject.192.168.42.72.nip.io/api
+https://i-ftp-syndesis.192.168.42.71.nip.io
 
 That's it, your integration is now live! Let's create an environmental parameter with the external URL using
 
-export externalURL="https://i-task-management-integration-myproject.192.168.42.72.nip.io/api"
+export externalURL="https://i-ftp-syndesis.192.168.42.71.nip.io"
 
 Make sure to use the externalURL for your integration. Now we are ready to play with the Task API:
 
-### 1. Create Task "/" 
+### 1. Create File "/" 
 
 ```
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{"id":1, "task":"my first task :)!"}' $externalURL
+        --data '{"fileName":"1.json", "content":"my first file :)!"}' $externalURL
         
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{"id":2, "task":"my second task :|"}' $externalURL
+        --data '{"fileName":"2.json", "content":"my second file :|!"}' $externalURL
         
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{"id":3, "task":"my third task :("}' $externalURL
+        --data '{"fileName":"3.json", "content":"my third file :(!"}' $externalURL
 
 ```
 
-### 2. Get Task "/" 
+### 2. Get File by Filename "/{name}"
 
 ```
-curl -k $externalURL
+curl -k $externalURL/1.json
 
-{"id":1,"task":"my new task!","completed":false}
-```
-
-### 3. Get Task by ID "/{id}"
-
-```
-curl -k $externalURL/1 
-
-{"id":1,"task":"my new task!","completed":false}
+{"fileName":"1.json", "content":"my first file :)!"}
 ```
  
-### 4. Update Task by ID "/{id}" 
+### 3. Update File by Filename "/{name}" 
 
 ```
-curl -k $externalURL/1 
+curl -k -X PUT $externalURL/1 --data '{"fileName":"1.json", "content":"my first file has more content now!"}'
 
-{"completed":true}
+{"fileName":"1.json", "content":"my first file has more content now!"}
 ```
 
-### 5. Delete Task for ID "/{id>}" 
+### 4. Delete File by Filename "/{name}" 
 
 ```
-curl -k -X DELETE $externalURL/1
-```
-
-## Extra Credit
-
-You can check what's going on using the Todo app using (with updated IP address), to find the route use `oc get routes | grep todo` and pick the one that looks like like
-
-https://todo-syndesis.192.168.42.72.nip.io/
-
-and you can login to the DB pod using
-
-```
-oc get pods
-oc rsh syndesis-db-1-c84cz 
-sh-4.2$ psql -Usampledb
-sampledb=> select * from todo;
+curl -k -X DELETE $externalURL/1.json
 ```
 
 ## What did we learn?
 * We learned to generate a Rest service from a OpenAPI/Swagger document
 * We learned to implement each flow using Syndesis Connectors and Steps
 * We learned to map Exceptions to HTTP return codes
-
-
-## Some more background Exceptions and HTTP Status Codes
-[HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) can be returned by an HTTP based Service. In an OpenAPI status codes are captured as part of the contract with this service. At a minimum a 200 OK needs to be defined, but usually in addition to a 200, a number of codes in the 4xx range (user errors) and 5xx (server errors) are defined. 
-
-The API Provider lets the user map Exceptions that can occur in the integration flow to HTTP Status codes in the UI that is presented when clicking on the configure button of the `Provided API Return Path` Step. The UI is shown in Figure 3 above.
-
-* `Response Code` dropdown - The HTTP Status Code returned in the Header the integratio flow completed successfully,
-* `Include error message in the return body` checkbox - check if an error body should be returned. A nice message maybe great during development, but could leak information you may not want to show in production. The message is a JSON formatted string containing elements `responseCode, category and message`. For example
-```
-    {
-      responseCode: 404,
-      category:  "SQL_ENTITY_NOT_FOUND_ERROR",
-      message: "SQL SELECT did not SELECT any records"
-    }
-```
-* `Error Response Codes` - The user defined mapping of error to HTTP status code. For each error in the left column the user can defined a HTTP Status code. Each connector can define certain `Standardized Errors`. The left column shows a combined list of all the errors of the connectors used in this particular flow. At a minimum you will see a `Server Error` which is the default if an exception did not match one the Error Categories defined by the Connector Developer.  
