@@ -1,7 +1,7 @@
 # API Provider with FTP
 
 ## Introduction
-In this scenario we start with an OpenAPI/Swagger file [ftp-api.json](ftp-api.json?raw=true). We will demonstrate how to create a REST API that can invoke your integration flows. Note that at the moment the example integrations use the FTP connector only. You can add other Connections if you want to.
+In this scenario we start with an OpenAPI/Swagger file [ftp-api.json](ftp-api.json?raw=true). We will demonstrate how to create a REST API that can invoke your integration flows. Note that at the moment the example integrations use the FTP connector only. You can add other Connections to the flows if you want to.
 
 
 ## Screencast of this Quickstart
@@ -32,7 +32,7 @@ As shown in Figure 1, fill out the first 4 fields: hostname or IP address of you
 
 ## Getting Started
 
-You can start by using the API Provider connector and selecting the ftp-api.json to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. If you want to set up your own flows you can follow the video tutorial from above. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip](TaskAPI-export.zip?raw=true) file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains five flows:
+You can start by using the API Provider connector and selecting the [ftp-api.json](ftp-api.json?raw=true) to implement your own flows, or you can start using the export. Here we describe using the export so you can get a feel for how things work quickly. If you want to set up your own flows you can follow the video tutorial from above. In the Syndesis UI navigate to `Integrations` and click on the `Import` button in the right top corner. Now you can select the [TaskAPI-export.zip](TaskAPI-export.zip?raw=true) file and start the import. On a succesful deployment, go to edit this integration. You will see that this integration contains four flows:
 
 | Flow               | Path             | FTP Action (Directory: inbox)|
 |--------------------|------------------|-----|
