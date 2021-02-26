@@ -1,0 +1,203 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "ftp-api",
+        "version": "1.0.0",
+        "description": "Example FTP Application API",
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0"
+        }
+    },
+    "paths": {
+        "/": {
+            "post": {
+                "requestBody": {
+                    "description": "File to create",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/File"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "files",
+                    "creating"
+                ],
+                "responses": {
+                    "201": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/File"
+                                }
+                            }
+                        },
+                        "description": "All is good"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "409": {
+                        "description": "Duplicate ID"
+                    },
+                    "500": {
+                        "description": "Server Error"
+                    },
+                    "503": {
+                        "description": "Temporary unavailable"
+                    }
+                },
+                "operationId": "upload-file",
+                "summary": "Upload new file",
+                "description": "Uploads a new file to the FTP Server"
+            }
+        },
+        "/{name}": {
+            "get": {
+                "tags": [
+                    "get",
+                    "files"
+                ],
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/File"
+                                }
+                            }
+                        },
+                        "description": "file content"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "File not Found"
+                    },
+                    "500": {
+                        "description": "Something bad happened on the server"
+                    },
+                    "503": {
+                        "description": "Temporary unavailable"
+                    }
+                },
+                "operationId": "get-file",
+                "summary": "Get file",
+                "description": "Get file with given filename"
+            },
+            "put": {
+                "requestBody": {
+                    "description": "File with updates",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/File"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "tags": [
+                    "updating"
+                ],
+                "responses": {
+                    "203": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/File"
+                                }
+                            }
+                        },
+                        "description": "All is good"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "No file with this name"
+                    },
+                    "500": {
+                        "description": "Server Error"
+                    },
+                    "503": {
+                        "description": "Temporary unavailable"
+                    }
+                },
+                "operationId": "update-file",
+                "summary": "Update file",
+                "description": "Updates file with given filename identifier"
+            },
+            "delete": {
+                "tags": [
+                    "destruction"
+                ],
+                "responses": {
+                    "203": {
+                        "description": "File deleted"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "No Record found with this filename"
+                    },
+                    "500": {
+                        "description": "Server Error"
+                    },
+                    "503": {
+                        "description": "Temporary unavailable"
+                    }
+                },
+                "operationId": "delete-file",
+                "summary": "Delete file",
+                "description": "Deletes file with given filename"
+            },
+            "parameters": [
+                {
+                    "name": "name",
+                    "description": "name of the file",
+                    "schema": {
+                        "type": "string"
+                    },
+                    "in": "path",
+                    "required": true
+                }
+            ]
+        }
+    },
+    "components": {
+        "schemas": {
+            "File": {
+                "description": "",
+                "required": [
+                    "name"
+                ],
+                "type": "object",
+                "properties": {
+                    "content": {
+                        "title": "FileContent",
+                        "description": "File Content",
+                        "type": "string"
+                    },
+                    "name": {
+                        "title": "FileName",
+                        "description": "File Name",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "securitySchemes": {
+            "username_password": {
+                "scheme": "basic",
+                "type": "http"
+            }
+        }
+    }
+}
