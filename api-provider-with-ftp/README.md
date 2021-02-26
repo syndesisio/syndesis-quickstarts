@@ -89,7 +89,7 @@ curl -k $externalURL/1.json
 ### 3. Update File by Filename "/{name}" 
 
 ```
-curl -k -X PUT $externalURL/1 --data '{"name":"1.json", "content":"my first file has more content now!"}'
+curl -k -X PUT $externalURL/1.json --data '{"name":"1.json", "content":"my first file has more content now!"}'
 
 {"name":"1.json", "content":"my first file has more content now!"}
 ```
