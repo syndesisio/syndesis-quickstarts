@@ -68,13 +68,13 @@ Make sure to use the externalURL for your integration. Now we are ready to play 
 
 ```
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{"fileName":"1.json", "content":"my first file :)!"}' $externalURL
+        --data '{"name":"1.json", "content":"my first file :)!"}' $externalURL
         
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{"fileName":"2.json", "content":"my second file :|!"}' $externalURL
+        --data '{"name":"2.json", "content":"my second file :|!"}' $externalURL
         
 curl -k --header "Content-Type: application/json" --request POST \
-        --data '{"fileName":"3.json", "content":"my third file :(!"}' $externalURL
+        --data '{"name":"3.json", "content":"my third file :(!"}' $externalURL
 
 ```
 
@@ -83,15 +83,15 @@ curl -k --header "Content-Type: application/json" --request POST \
 ```
 curl -k $externalURL/1.json
 
-{"fileName":"1.json", "content":"my first file :)!"}
+{"name":"1.json", "content":"my first file :)!"}
 ```
  
 ### 3. Update File by Filename "/{name}" 
 
 ```
-curl -k -X PUT $externalURL/1 --data '{"fileName":"1.json", "content":"my first file has more content now!"}'
+curl -k -X PUT $externalURL/1 --data '{"name":"1.json", "content":"my first file has more content now!"}'
 
-{"fileName":"1.json", "content":"my first file has more content now!"}
+{"name":"1.json", "content":"my first file has more content now!"}
 ```
 
 ### 4. Delete File by Filename "/{name}" 
