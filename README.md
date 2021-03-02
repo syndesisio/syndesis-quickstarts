@@ -33,7 +33,7 @@ To install [minishift](https://www.okd.io/minishift/) itself use
 brew cask install minishift
 minishift config set vm-driver hyperkit
 ```
-or simply download the minishift binary from [github](https://github.com/minishift/minishift/releases). Hop onto [IRC](https://webchat.freenode.net) (#syndesis) to chat with us if you need help with any of this!
+or simply download the minishift binary from [github](https://github.com/minishift/minishift/releases). Hop onto [Gitter](https://gitter.im/syndesisio/community) to chat with us if you need help with any of this!
 
 ## 3. Install Syndesis
 We will now download the docker images from our official dockerhub repository and start them on your minishift installation using
