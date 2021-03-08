@@ -7,11 +7,9 @@ In this scenario we demonstrate how to use conditional flows.
 
 Link to a screencast of this quickstart on our youtube channel:
 
-[![API Provider Quickstart](https://i9.ytimg.com/vi/QltvakZ1hGo/mq2.jpg)](https://youtu.be/gHA6sJM8x-8)
+[![Conditional Flows Quickstart](https://img.youtube.com/vi/QltvakZ1hGo/mq2.jpg)](https://youtu.be/gHA6sJM8x-8)
 *`<<Click to Play>>`*
 
-![Add Splitter](img/fig2-api-four-flows.png)
-*Figure 1. Endpoints in the File API*
 
 ## Getting Started
 
@@ -19,7 +17,7 @@ Here we describe using the export so you can get a feel for how things work quic
 
 You can start create a db-2-log flow, using `Select * from todo`. Next, add a splitter so that each record turns into message as conditional flows work on single messages. After the splitter is inserted you can now add a `Condition Flow`.
 
-![Adding Splitter and Conditional Flow](img/fig1-split-and-add-conditions)
+![Adding Splitter and Conditional Flow](img/fig1-split-and-add-conditions.png)
 *Figure 1. Adding Splitter and Conditional Flows*
 
 Create a condition for `task contains dog` and `task contains cat` as well as a default flow.
