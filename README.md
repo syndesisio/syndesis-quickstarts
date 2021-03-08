@@ -66,7 +66,9 @@ and add `demoData: true`. Then restart (delete) the db and server pods.
   * [DB 2 GoogleSheets](db-2-googlesheets) - read from a database, insert into googlesheet.
   * [MongoDB](mongodb) - read and write to a MongoDB NoSQL database. You may want to do [API Provider](api-provider) before doing this one.
   
-  
+### 4.3 Flow Manipulation
+  * [Conditional Flows](conditional-flows) - learn about splitting messages, primary flows and subflows
+
 ### 4.3 API
   * [WebHook](webhook-2-db) - create and expose a webhook to invoke an integration with some data
   * [API Provider](api-provider) - create and expose a REST interface to (remotely) interact with integration flows
