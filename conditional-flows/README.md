@@ -43,6 +43,9 @@ insert into todo values (3, "Watch Lucifer Morningstar on Netflix!");
 ```
 Now in the Activity view we should now see messages being split and processed. You should see the printout `DOG FLOW` for tasks containing `dog` and `CAT FLOW` for tasks containing `cat`. 
 
+![Activity Logging](img/fig4-activity-logging.png)
+*Figure 4. Activity Logging*
+
 ## What did we learn?
 * We learned to use the Splitter
 * We learned to use Conditional Flows
