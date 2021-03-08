@@ -51,7 +51,7 @@ Some of the Quickstarts below use a sample database. If you don't see this DB or
 ```
 oc edit syndesis
 ```
-and add `demoData: true`. Then restart (delete) the db and server pods, so that restart.
+and add `demoData: true`. Then restart (delete) the db and server pods.
 
 ### 4.2 Integrations
   * [Hello World](hello-world) - log 'Hello World!'
