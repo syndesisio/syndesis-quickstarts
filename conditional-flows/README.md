@@ -7,7 +7,7 @@ In this scenario we demonstrate how to use conditional flows.
 
 Link to a screencast of this quickstart on our youtube channel:
 
-[![Conditional Flows Quickstart](https://img.youtube.com/vi/QltvakZ1hGo/mq2.jpg)](https://youtu.be/gHA6sJM8x-8)
+[![Conditional Flows Quickstart](https://img.youtube.com/vi/QltvakZ1hGo/mq2.jpg)](https://youtu.be/QltvakZ1hGo)
 
 *`<<Click to Play>>`*
 
