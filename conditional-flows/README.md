@@ -8,6 +8,7 @@ In this scenario we demonstrate how to use conditional flows.
 Link to a screencast of this quickstart on our youtube channel:
 
 [![Conditional Flows Quickstart](https://img.youtube.com/vi/QltvakZ1hGo/mq2.jpg)](https://youtu.be/gHA6sJM8x-8)
+
 *`<<Click to Play>>`*
 
 
@@ -28,6 +29,19 @@ Create a condition for `task contains dog` and `task contains cat` as well as a 
 ![Sub flow](img/fig3-subflow.png)
 *Figure 3. Subflow*
 
+
+## Running the example
+
+Log into the SampleDB using
+
+```
+oc rsh syndesis-db-<name>
+psql -Usampledb
+insert into todo values (1, "Walk the dog!",0);
+insert into todo values (2, "Feed the cat!",0);
+insert into todo values (3, "Watch Lucifer Morningstar on Netflix!");
+```
+Now in the Activity view we should now see messages being split and processed. You should see the printout `DOG FLOW` for tasks containing `dog` and `CAT FLOW` for tasks containing `cat`. 
 
 ## What did we learn?
 * We learned to use the Splitter
