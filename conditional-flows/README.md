@@ -1,4 +1,4 @@
-# API Provider with FTP
+# Conditional Flows
 
 ## Introduction
 In this scenario we demonstrate how to use conditional flows.
