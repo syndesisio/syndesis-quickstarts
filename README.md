@@ -46,7 +46,14 @@ Note that on Windows you will need something like [Cygwin](https://www.cygwin.co
 
 Syndesis lets you build application without writing any code. Perhaps the easiest way to learn about Syndesis is to simply run to quickstarts. The quickstarts are zero code, so instead we offer Syndesis integration `exports` from scenarios we built for you. You can try them out by `importing` an export as an integration into Syndesis. After the import you sometimes may need to re-enter some connection information like passwords. The accompanying README should detail this. We have ordered the Quickstarts loosely ordered by simplicity, so it is recommended to start from the top of this list. 
 
-### 4.1 Integrations
+### 4.1 Prerequisite
+Some of the Quickstarts below use a sample database. If you don't see this DB or the sampleDB connection, then edit the syndesis application:
+```
+oc edit syndesis
+```
+and add `demoData: true`. Then restart (delete) the db and server pods, so that restart.
+
+### 4.2 Integrations
   * [Hello World](hello-world) - log 'Hello World!'
   * [DB 2 DB](db-2-db) - read from a database table, insert in another database table
   * [FHIR 2 FHIR](fhir) - breath 'fire' from a FHIR REST service and update the same record
@@ -60,7 +67,7 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   * [MongoDB](mongodb) - read and write to a MongoDB NoSQL database. You may want to do [API Provider](api-provider) before doing this one.
   
   
-### 4.2 API
+### 4.3 API
   * [WebHook](webhook-2-db) - create and expose a webhook to invoke an integration with some data
   * [API Provider](api-provider) - create and expose a REST interface to (remotely) interact with integration flows
   * [API Provider FTP](api-provider-with-ftp) - create and expose a REST interface to interact with FTP server
@@ -69,13 +76,13 @@ Syndesis lets you build application without writing any code. Perhaps the easies
   
   ![Integration Quickstarts](img/quickstarts.png)
   
-### 4.3 Acquire OAuth Credentials for the Syndesis Setting Section
+### 4.4 Acquire OAuth Credentials for the Syndesis Setting Section
   * [Twitter](twitter-2-db/TwitterCredentials.md)
   * [GMail](twitter-2-gmail/GmailCredentials.md)
   * [GoogleSheets API](db-2-googlesheets/GoogleSheetsCredentials.md)
   * [Jira](jira-2-twitter/JiraConnection.md)
   
-### 4.4 Advanced Configuration
+### 4.5 Advanced Configuration
   * [Kafka Autodiscovery](kafka-autodiscovery) - How to configure your environment to auto discover kafka brokers
   
   
